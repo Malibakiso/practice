@@ -1,0 +1,115 @@
+.branding{
+  font-size:17px;
+}
+
+.showcase{
+  background:url('../img/showcase.jpg') no-repeat;
+  background-position:center;
+  height: 600px;
+  padding:140px 100px;
+  color:#fff;
+}
+
+.showcase h1{
+  font-size:40px;
+  font-weight:700;
+  text-transform: uppercase;
+}
+
+.showcase hr{
+  width:100px;
+  margin:auto;
+  border-width:3px;
+  border-color:#f44336;
+}
+
+.showcase p{
+  font-size:16px;
+  padding-bottom:20px;
+}
+
+.section{
+  padding:40px 0;
+}
+
+.section h2{
+  padding:0;
+  margin:0;
+}
+
+.section .fa{
+  font-size:50px;
+}
+
+.section img{
+  width:100%;
+}
+
+@media only screen and (max-width:600px){
+  body{
+    margin-top:190px;
+  }
+
+  .showcase{
+    height:400px;
+    padding: 60px 0;
+  }
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list_syle: none;
+}
+
+ul li{
+  float: left;
+  width: 200px;
+  height: 40px;
+  opacity: .8;
+  line-height: 40px
+  text-align: center;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+ul li a:hover{
+  background-color: red;
+}
+
+ul li ul li{
+  display: none;
+}
+
+ul li:hover ul li{
+  display: block;
+}
+
+.dropdown-menu.cart-list h2 {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 0;
+}
+.dropdown-menu.cart-list h2 a {
+	color: #3f4b5a;
+}
+.dropdown-menu.cart-list h2 a:hover {
+	color: #3452ff;
+}
+
+nav.navbar.bootsnav ul.nav > li > a {
+	color: #3f4b5a;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+nav.navbar.bootsnav ul.nav > li > a:hover,
+nav.navbar.bootsnav ul.nav > li.active > a,
+nav.navbar.bootsnav ul.nav > li>.dropdown-menu li > a:hover,
+nav.navbar.bootsnav ul.nav > li>.dropdown-menu li.active > a,
+nav.navbar.bootsnav ul.nav > li>.dropdown-menu.megamenu-content li > a:hover,
+nav.navbar.bootsnav ul.nav > li>.dropdown-menu.megamenu-content .menu-col li.active > a {
+    color: #3452ff;
