@@ -268,7 +268,7 @@ input:-webkit-autofill:focus {
 .social-icon ul li a:hover,
 .social-icon ul li.active a{
 	background: #fff;
-	color: #3452FF;
+	color: #f6a14c;
 	border-radius: 3px;
 }
 
@@ -307,17 +307,6 @@ nav.navbar.bootsnav ul.nav > li>.dropdown-menu li.active > a,
 nav.navbar.bootsnav ul.nav > li>.dropdown-menu.megamenu-content li > a:hover,
 nav.navbar.bootsnav ul.nav > li>.dropdown-menu.megamenu-content .menu-col li.active > a {
     color: #f6a14c;
-}
-.dropdown-menu.cart-list h2 {
-	font-size: 16px;
-	line-height: 20px;
-	margin-bottom: 0;
-}
-.dropdown-menu.cart-list h2 a {
-	color: #3f4b5a;
-}
-.dropdown-menu.cart-list h2 a:hover {
-	color: #bcb8b7;
 }
 
 @media (min-width: 993px) {
