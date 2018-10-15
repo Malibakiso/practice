@@ -328,14 +328,14 @@ nav.navbar.bootsnav ul.nav > li>.dropdown-menu.megamenu-content .menu-col li.act
 }
 
 .attr-nav>ul>li>a span.badge{
-    background-color: #3452ff;
+    background-color: #f6a14c;
 }
 
 ul.cart-list>li.total>a.btn {
     color: #fff !important;
 }
 ul.cart-list>li.total>a.btn:hover {
-    background-color: #3452ff !important;
+    background-color: #f6a14c !important;
 }
 
 
@@ -403,7 +403,7 @@ ul.cart-list>li.total>a.btn:hover {
 	display: inline-block;
 }
 .slider-content a:hover {
-	background: #0f32fd;
+	background: #f6a14c;
 }
 .slider-content a i{
 	padding-left: 8px;
@@ -439,7 +439,7 @@ ul.cart-list>li.total>a.btn:hover {
 	transition: all .3s;
 }
 .owl-nav i {
-	background: #3452ff none repeat scroll 0 0;
+	background: #f6a14c none repeat scroll 0 0;
 	color: #fff;
 	font-size: 40px;
 	height: 50px;
