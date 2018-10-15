@@ -561,7 +561,7 @@ ul.cart-list>li.total>a.btn:hover {
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	background: rgba(52, 82, 255, .8);
+	background: rgba(250, 204,158, .8);
 	-webkit-transition: .3s;
 	transition: .3s;
 	opacity: 0;
@@ -571,7 +571,7 @@ ul.cart-list>li.total>a.btn:hover {
 }
 .single-intro:hover
 .intro-details{
-	border-bottom: 4px solid #3452FF;
+	border-bottom: 4px solid #f6a14c;
 }
 .intro-details{
 	background: #fff none repeat scroll 0 0;
@@ -794,19 +794,19 @@ ul.cart-list>li.total>a.btn:hover {
 	position: relative;
 }
 .panel-title > a[aria-expanded=true]{
-	background: #3452FF;
+	background: #f6a14c;
 	color: #fff;
 }
 .panel-title > a[aria-expanded=true]:after{
 	content: "-";
 	background: #fff;
-	color: #3452FF;
+	color: #f6a14c;
 }
 .panel-title > a:focus{
 	text-decoration: none;
 }
 .panel-title > a:after{
-	background: #3452ff none repeat scroll 0 0;
+	background: #f6a14c none repeat scroll 0 0;
 	border-radius: 2px;
 	color: #fff;
 	content: "+";
@@ -839,7 +839,7 @@ ul.cart-list>li.total>a.btn:hover {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(77, 103, 254, .9);
+	background: rgba(246, 161, 76, .9);
 }
 .portfolio-details {
     position: absolute;
@@ -886,7 +886,7 @@ ul.cart-list>li.total>a.btn:hover {
 }
 
 .single-portfolio-title a {
-	color: #3452ff;
+	color: #f6a14c;
 	font-size: 17px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -922,7 +922,7 @@ ul.cart-list>li.total>a.btn:hover {
 	margin-right: 6px;
 }
 .portfolio-details-panel ul a:hover {
-	color: #3452ff;
+	color: #f6a14c;
 }
 
 .single-portfolio-images img {
@@ -953,7 +953,7 @@ ul.cart-list>li.total>a.btn:hover {
 	left: 0;
 	position: absolute;
 	top: 4px;
-	color: #4860F0;
+	color: #f6a14c;
 	font-size: 22px;
 }
 .company-address ul li a{
@@ -989,7 +989,7 @@ a:focus{
 -------------------------------*/
 
 #loading{
-	background-color: #3452FF;
+	background-color: #f6a14c;
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -1410,7 +1410,7 @@ li.rating ul i {
 	list-style:none;
 }
 .primary-footer {
-	background: #00043B;
+	background: #f6a14c;
 	padding: 90px 0px 50px;
 }
 .footer-widget{
