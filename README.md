@@ -3,7 +3,12 @@ group-project-control-alt-elite created by GitHub Classroom
 
 # The Bank of Sun Online Banking Application
 
-One Paragraph of project description goes here
+A small local bank, The Bank of the Sun, has realised that its personal online banking offering is no longer
+appropriate for banking in 2018. To this end, the bank has contracted your group to develop a new online
+banking system to work with the banks existing bank end services. In order to ensure that the bank is happy
+with our design and the functionality of it, they have asked us to develop a requirements specification for it,
+followed by some design mockups and then a functioning prototype.
+
 
 ## Getting Started
 
@@ -65,26 +70,9 @@ Add additional notes about how to deploy this on a live system
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Mr Richard Barnett
+* Tutors
