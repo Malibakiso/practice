@@ -10,22 +10,26 @@ Our group was tasked to create an online web application. This web application w
 
 ## Installation
 
-Clone git repo:
-
+      Clone git repo:
 
 
 Install:
   
-   npm install
+        npm install
 
 Set HOST and PORT environment variables:
 
+
+      
+
 Start a local server:
 
-  npm start
+       npm start
 
 
+## features
 
+A well rounded online application which allows for easy navigation and a modern look.
 
 
 Enjoy!
