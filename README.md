@@ -48,7 +48,7 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [JavaScript](http://www.dropwizard.io/1.0.2/docs/) 
-* [CSS](http://www.dropwizard.io/1.0.2/docs/) - Cascading Style Sheet
+* [CSS](http://www.dropwizard.io/1.0.2/docs/) 
 * [HTML](https://maven.apache.org/) 
 * [React.js](https://rometools.github.io/rome/) - Front end development framework
 
