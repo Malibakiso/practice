@@ -119,7 +119,7 @@ h6{
 }
 
 .btn {
-	color: #fff;
+	color: #f6a14c;
 	padding: 14px 30px;
 	text-transform: uppercase;
 	letter-spacing: 4px;
@@ -131,7 +131,7 @@ h6{
     box-shadow: 0 8px 10px rgba(34, 34, 34, 0.2);
 }
 .btn-primary {
-	background-color: #3452ff;
+	background-color: #f6a14c;
 }
 .btn-primary,
 .btn-primary:hover,
@@ -139,8 +139,8 @@ h6{
 .btn-primary:focus,
 .btn-primary:active:focus,
 .btn-primary:active:hover {
-    background-color: #3452ff;
-    border-color: #3452ff;
+    background-color: #f6a14c;
+    border-color: #f6a14c;
 }
 
 
@@ -1520,6 +1520,17 @@ li.rating ul i {
 .news-letter p{
 	margin-bottom: 23px;
 }
+
+btn-normal {
+    padding: 8px 20px;
+    background:#7B241C;
+    border: 2px solid #7B241C;
+    color:white ;
+    text-decoration: none;
+    float: left;
+    margin: 1.5em 0 0 0;
+    font-size: 16px;
+    text-transform: capitalize;
 
 .subscribe-form {
 	position: relative;
