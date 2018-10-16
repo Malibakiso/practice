@@ -10,9 +10,7 @@ with our design and the functionality of it, they have asked us to develop a req
 followed by some design mockups and then a functioning prototype.
 
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## About
 
 ## Installing
 
