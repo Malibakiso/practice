@@ -12,11 +12,11 @@ followed by some design mockups and then a functioning prototype.
 
 ## About
 
-## Installing
+This projected is the group assessment for Socio Informatics/Information Systems Management 354. Groups consisted of 4/5 members and
+was tasked with implementation including use of HTML,CSS, JavaScript an react.js.
+
 
 ## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
