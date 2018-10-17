@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div>
-      
+
       <Switch>
         <Route path = "/index" component = {index}/>
       </Switch>
