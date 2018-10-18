@@ -31,3 +31,4 @@ URL:
 ## Acknowledgments
 * Mr Richard Barnett
 * Tutors
+* Trendy them
