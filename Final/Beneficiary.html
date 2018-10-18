@@ -75,19 +75,106 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</button>
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#index.html" class="scroll">home</a></li>
-							<li><a href="#about" class="scroll">about</a></li>
-							<li><a href="#services" class="scroll">services</a></li>
-							<li><a href="#skills" class="scroll">account</a></li>
-							<li><a href="#payment" class="scroll">profile</a></li>
-							<li><a href="#contact" class="scroll">contact</a></li>
-							<li><a href="#contact" class="scroll">signout</a></li>
+						<ul class="nav navbar-nav navbar-right" data-in="" data-out="">
+							<li class="active"><a href="index.html">home</a></li>
+							<li><a href="About.html">about</a></li>
+							<li><a href="Services.html">services</a></li>
+							<li><a href="Account.html">account</a></li>
+							<li><a href="Profile.html">profile</a></li>
+							<li><a href="Contact.html">contact</a></li>
+							<li><a href="Signout.html">signout</a></li>
 
 						</ul>
 					</div>
 				</div>
 			</nav>
+		</div>
+
+		<h3 style="text-align: center">Add your own Beneficiary</h3>
+		<br>
+		<br>
+	<div class="container" style="text-align: center">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="name" placeholder="Your name..">
+      </div>
+    </div>
+		<br>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Account number</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="accno" name="accno" placeholder="Your account number..">
+      </div>
+    </div>
+		<br>
+    <div class="row">
+      <div class="col-25">
+        <label for="bank">Bank</label>
+      </div>
+      <div class="col-75">
+        <select id="bank" name="bank">
+          <option value="STB">Standard Bank</option>
+          <option value="FNB">First National Bank</option>
+          <option value="ABSA">ABSA</option>
+					<option value="CB">Capitec Bank</option>
+        </select>
+      </div>
+    </div>
+		<br>
+		<div class="row">
+      <div class="col-25">
+        <label for="reference">Your reference</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="accno" name="accno" placeholder=" ">
+      </div>
+    </div>
+		<br>
+		<div class="row">
+      <div class="col-25">
+        <label for="ben-reference">Beneficiary reference</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="accno" name="accno" placeholder=" ">
+      </div>
+    </div>
+		<br>
+		<label for="notification">Set up payment notification?</label><br>
+
+		<form>
+		<input type="radio" name="true" value="Yes" checked> Yes<br>
+    <input type="radio" name="false" value="No"> No<br>
+	  </form>
+		<br>
+		<div class="row">
+      <div class="col-25">
+        <label for="recipient">Recipient name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="accno" name="accno" placeholder=" ">
+      </div>
+    </div>
+		<br>
+		<div class="row">
+      <div class="col-25">
+        <label for="recipient-email">Recipient email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="accno" name="accno" placeholder=" ">
+      </div>
+			<br>
+
+     <form>
+			<input type="submit" value="Submit">
+			<br>
+			<input type="submit" value="Exit">
+		</form>
 		</div>
 		<div class="logo">
 			<a href="index.html"><!--<i class="fa fa-inr" aria-hidden="true"></i>--> The Bank<span> of the Sun</span></a>
@@ -99,7 +186,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     		<div class="footer-grids">
     			<div class="col-md-4 footer-grid1">
     				<div class="logo1">
-    					<a href="index.html">Corporate <span>Bank</span></a>
+    					<a href="index.html">The Bank <span> of the Sun</span></a>
     				</div>
     				<p> Donec in neque quis orci consequat lobortis. Sed non vestibulum mauris. Donec in neque quis orci</p>
     				<p> Donec in neque quis orci consequat lobortis. Sed non vestibulum mauris. Donec in neque quis orci</p>
