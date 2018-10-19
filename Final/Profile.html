@@ -38,6 +38,132 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 </script>
 <!-- //scrolling script -->
+<style>
+body {
+  background: #d7d9d9;
+  width: 100%;
+  margin: 60px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  text-align: center;
+  color: #8f9496;
+}
+
+article {
+  background: #00000;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  float: left;
+  width: 140px;
+  margin: 0 auto 40px auto;
+  -webkit-box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.24);
+}
+
+.card-header {
+  padding: 4px;
+  background: #eee;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-header button {
+  font-size: 13px;
+  cursor: pointer;
+  width: 100%;
+  background: #3498db;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card-header button:hover {
+  background: #51a7e0;
+}
+
+.card-header img {
+  width: 132px;
+  border-radius: 2px;
+}
+
+.card-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-links hr {
+  border-bottom: 0;
+  border-top: 1px solid #ddd;
+  margin: 0;
+}
+
+.card-links a {
+  text-decoration: none;
+  color: #a1a5a8;
+}
+
+.card-links a li {
+  margin: 0;
+  padding: 14px 6px;
+  border-left: 4px solid #fff;
+  transition: background-color 0.2s ease,
+              border-left 0.2s ease,
+              color 0.2s ease;
+}
+
+.card-links a li:hover {
+  border-left: 4px solid #3498db;
+  background: #f6f6f6;
+  color: #44474a;
+}
+
+.card-links a li.active {
+  border-left: 4px solid #e74c3c !important;
+  background: #f6f6f6;
+  color: #44474a;
+}
+
+.card-links a li i {
+  position: absolute;
+  margin-left: 4px;
+}
+
+.link-favorites {
+  border-bottom-left-radius: 4px;
+}
+
+.label {
+  position: relative;
+  left: 26px;
+  top: -1px;
+  font-size: 12px;
+}
+
+.label-notification {
+  float: right;
+  font-size: 10px;
+  color: #8f9496;
+  background: #eceded ;
+  padding: 4px;
+  border-radius: 4px;
+  margin: -2px 4px 0 0;
+  transition: background-color 0.2s ease,
+              color 0.2s ease;
+}
+
+.card-links a li:hover .label-notification,
+.label-active {
+  color: #44474a;
+  background: #d7d9d9;
+}
+</style>
 </head>
 <!-- //Head -->
 <!-- Body -->
@@ -101,6 +227,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 
 		<!-- ::::::::::::::::::::: Profile Section:::::::::::::::::::::::::: -->
+		<article>
+		    <div class="card-header">
+		      <img class="profile-photo">
+		    </div>
+		    <ul class="card-links">
+		      <a href="#">
+		        <li>
+		          <i class="icon icon-user"></i><span class="label">Profile</span></span>
+		        </li>
+		      </a>
+		      <hr>
+		      <a href="#">
+		        <li class="active">
+		          <i class="icon icon-list-alt"></i><span class="label">Beneficiaries</span></span>
+		        </li>
+		      </a>
+		      <hr>
+		      <a href="#">
+		        <li>
+		          <i class="icon icon-time"></i><span class="label">Buy/Shop</span></span>
+		        </li>
+		      </a>
+		      <hr>
+		      <a href="#">
+		        <li>
+		          <i class="icon icon-file-text-alt"></i><span class="label">Manage</span></span>
+		        </li>
+		      </a>
+		      <hr>
+		      <a href="#">
+		        <li class="link-favorites">
+		          <i class="icon icon-heart"></i><span class="label">Help</span></span>
+		        </li>
+		      </a>
+		    </ul>
+		  </article>
+
 		<section class="profile section-padding">
 			<div class="container">
 				<div class="row">
