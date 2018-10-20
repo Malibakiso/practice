@@ -11,6 +11,12 @@ import Prepaid from "./components/Prepaid";
 import Profile from "./components/Profile";
 import Services from "./components/Services";
 import Signout from "./components/Signout";
+import Pay from "./components/Pay";
+import Details from "./components/Details";
+// import Questions from "./components/Questions";
+import Security from "./components/Security";
+import Summary from "./components/Summary";
+
 
 
 
@@ -41,6 +47,11 @@ class App extends Component {
         <Route path = "/Profile" component = {Profile}/>
         <Route path = "/Services" component = {Services}/>
         <Route path = "/Signout" component = {Signout}/>
+        <Route path = "/Pay" component ={Pay}/>
+        <Route path = "/Details" component ={Details}/>
+        {/* <Route path = "/Questions" component ={Questions}/> */}
+        <Route path = "/Security" component ={Security}/>
+        <Route path = "/Summary" component ={Summary}/>
 
       </Switch>
 

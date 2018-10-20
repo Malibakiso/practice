@@ -155,6 +155,18 @@ import reactDOM from 'react-dom';
     			</div>
     		</div>
 
+        {/* Trial and; */}
+
+        {/* <!-- //footer --> */}
+
+{/* <!-- copyright --> */}
+<section class="copyright">
+	<div class="agileits_copyright text-center">
+			<p>© 2018 Corporate Bank. All rights reserved | Design by <a href="//w3layouts.com/" class="w3_agile">Ctrl alt elite</a></p>
+	</div>
+</section>
+
+
       </div>
     );
   };
