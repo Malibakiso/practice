@@ -1,9 +1,6 @@
 import React from "react";
 import reactDOM from 'react-dom';
-// import './App.css';
-// import './style/styles.css';
-// import App from './App';
-// import * as servicesWorker from './serviceWorker';
+
 
   const index = () => {
     return(
