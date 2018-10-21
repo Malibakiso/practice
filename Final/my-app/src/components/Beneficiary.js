@@ -1,9 +1,20 @@
 import React from "react";
 import reactDOM from 'react-dom';
+import sun from '../images/sun.jpg';
 
   const Beneficiary = () => {
     return(
       <div>
+        <link rel="icon" type="image/jpg" href="images/sun"/>
+        <div class="logo">
+          <img src= {sun} alt="SunBank" width="200" height="200"/>
+        </div>
+        {/* <div class="logo"> */}
+          {/* <a href="index.html">
+            {/* <!--<i class="fa fa-inr" aria-hidden="true"></i>-->  */}
+            {/* The Bank<span> of the Sun</span></a> */}
+        {/* </div> */} 
+
         <h3 style={{textAlign: 'center'}}>Add your own Beneficiary</h3>
     		<br/>
     		<br/>

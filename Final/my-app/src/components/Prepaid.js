@@ -1,6 +1,8 @@
 import React from "react";
 import reactDOM from 'react-dom';
 import ReactTable from 'react-table'
+import a from '../images/a.jpg';
+import b from '../images/b.jpg';
   const Prepaid = () => {
     return(
       <div>
@@ -61,7 +63,7 @@ import ReactTable from 'react-table'
     	</div>
     		<div class="about-grids">
     		<div class="col-md-6 about-left">
-    			<img src="images/1.jpg" alt="" />
+    			<img src={a} alt="" />
     		</div>
     		<div class="col-md-6 about-right">
     			<h3>AIRTIME</h3>
@@ -104,7 +106,7 @@ import ReactTable from 'react-table'
     	</div>
     		<div class="about-grids">
     		<div class="col-md-6 about-left">
-    			<img src="images/2.jpg" alt="" />
+    			<img src={b} alt="" />
     		</div>
     		<div class="col-md-6 about-right">
     			<h3>DATA BUNDLES</h3>

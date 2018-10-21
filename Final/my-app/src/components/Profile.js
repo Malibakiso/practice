@@ -1,5 +1,8 @@
 import React from "react";
 import reactDOM from 'react-dom';
+import summary from '../images/summary.png';
+import security from '../images/security.png'
+import details from '../images/details.png'
 
   const Profile = () => {
       return (
@@ -24,6 +27,10 @@ import reactDOM from 'react-dom';
                 <li><a href="#"><i className="fa fa-google-plus" aria-hidden="true" /></a></li>
                 <li><a href="#"><i className="fa fa-pinterest-p" aria-hidden="true" /></a></li>
                 <li><a href="#"><i className="fa fa-linkedin" aria-hidden="true" /></a></li>
+                <link rel="icon" type="image/jpg" href="images/a"/>
+                <link rel="icon" type="image/png" href="images/summary"/>
+                <link rel="icon" type="image/png" href="images/security"/>
+                <link rel="icon" type="image/png" href="images/details"/>
               </ul>
               <div className="form-top">
                 <form action="#" method="post" className="navbar-form navbar-left">
@@ -117,7 +124,7 @@ import reactDOM from 'react-dom';
                 <div className="col-md-4 col-sm-6 col-xs-12 col">
                   <div className="blog-wrap mb-30">
                     <div className="blog-img">
-                      <img src="images/details.png" alt />
+                      <img src={details} alt="" height="120"/>
                     </div>
                     <div className="blog-content wow fadeInUp" style={{visibility: 'visible', animationName: 'fadeInUp'}}>
                       <div className="blog-meta">
@@ -130,7 +137,7 @@ import reactDOM from 'react-dom';
                 <div className="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" style={{visibility: 'visible', animationName: 'fadeInUp'}}>
                   <div className="blog-wrap  mb-30">
                     <div className="blog-img">
-                      <img src="images/security.png" alt />
+                      <img src={security} alt="" height="120"/>
                     </div>
                     <div className="blog-content">
                       <div className="blog-meta">
@@ -143,7 +150,7 @@ import reactDOM from 'react-dom';
                 <div className="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" style={{visibility: 'visible', animationName: 'fadeInUp'}}>
                   <div className="blog-wrap  mb-30">
                     <div className="blog-img">
-                      <img src="images/summary.png" alt />
+                    <img src={summary} alt ="" height="120"/>
                     </div>
                     <div className="blog-content">
                       <div className="blog-meta">

@@ -1,5 +1,6 @@
 import React from "react";
 import reactDOM from 'react-dom';
+import sunmain from '../images/sunmain.png';
 
   const Business_acc = () => {
     return(
@@ -16,6 +17,7 @@ import reactDOM from 'react-dom';
       			<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
       			<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
       			<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <link rel="icon" type="image/png" href="images/sunmain"/>
       		</ul>
       		<div class="form-top">
       		  <form action="#" method="post" class="navbar-form navbar-left">
@@ -59,6 +61,7 @@ import reactDOM from 'react-dom';
       			</nav>
       		</div>
       		<div class="logo">
+            {/* <img src={sunmain} alt="small_logo" /> */}
       			<a href="index.html"> The Bank<span> of the Sun</span></a>
       		</div>
       {/* <!-- contact --> */}

@@ -1,5 +1,7 @@
 import React from "react";
 import reactDOM from 'react-dom';
+import sun from '../images/sun.jpg';
+
 
   const Services = () => {
     return(
@@ -15,6 +17,7 @@ import reactDOM from 'react-dom';
         	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
         	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
         	<link rel="stylesheet" href="css/font-awesome.css" />
+          <link rel="icon" type="image/jpg" href="images/sun"/>
         {/* <!-- //.css files -->
         <!-- Default-JavaScript-File --> */}
         	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
@@ -23,7 +26,7 @@ import reactDOM from 'react-dom';
         <!-- fonts --> */}
         	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet"/>
         	<link href="//fonts.googleapis.com/css?family=Ropa+Sans:400,400i&amp;subset=latin-ext" rel="stylesheet"/>
-        
+
       </head>
 
       <div class="top-main">
@@ -53,8 +56,7 @@ import reactDOM from 'react-dom';
     			<div class="clearfix"></div>
     	</div>
       <div class="logo">
-      {/* <!--	<a href="index.html"><!--<i class="fa fa-inr" aria-hidden="true"></i>The Bank<span> of the Sun</span></a> --> */}
-        <img src= "images/sun.jpg" alt="SunBank" width="200" height="200"/>
+        <img src= {sun} alt="SunBank" width="200" height="200"/>
       </div>
 
   {/* // <!-- services --> */}
