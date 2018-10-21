@@ -21,6 +21,9 @@ import  New_password from "./components/New_password";
 import Factor from "./components/Factor";
 import log1 from "./components/log1";
 
+import Navigation from "./components/Navigation";
+import Navigation1 from "./components/Navigation1";
+
 // images
 
 
@@ -64,8 +67,9 @@ class App extends Component {
         <Route path = "/Factor" component ={Factor}/>
         <Route path = "/New_password" component ={New_password}/>
         <Route path = "/log1" component ={log1}/>
-
-
+        <Route path = "/log1" component ={log1}/>
+        <Route path = "/Navigation" component ={Navigation}/>
+        <Route path = "/Navigation1" component ={Navigation1}/>
 
       </Switch>
 
