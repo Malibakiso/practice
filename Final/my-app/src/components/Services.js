@@ -72,6 +72,7 @@ import sun from '../images/sun.jpg';
               <div class="icon">
                 <i class="fa fa-usd" aria-hidden="true"></i>
               </div>
+              
               <h4><a href="#"><button>TEXTCASH</button></a></h4>
               <p>Text Cash Network allows people from over 142 countries to signup to receive text message advertisements.</p>
             </div>
@@ -126,7 +127,8 @@ import sun from '../images/sun.jpg';
             </div>
           </div>
           <div class="clearfix"></div>
-        </div>
+
+      </div>
       </div>
     </div>
   </section>

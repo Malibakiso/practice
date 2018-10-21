@@ -20,6 +20,7 @@ import Change from "./components/Change";
 import  New_password from "./components/New_password";
 import Factor from "./components/Factor";
 import log1 from "./components/log1";
+import sign_in from "./components/sign_in";
 
 // import Navigation from "./components/Navigation";
 import Navigation1 from "./components/Navigation1";
@@ -46,7 +47,7 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div className="App">
-
+        <div>
         <Link to='/Home' >Home</Link>
         <Link to='/About'>About</Link>
         <Link to='/Account'>Account</Link>
@@ -54,7 +55,7 @@ class App extends Component {
         <Link to='/Profile'>Profile</Link>
         <Link to='/Contact'>Contact</Link>
         <Link to='/Signout'>Signout</Link>
-
+      </div>
 
 
       <Switch>

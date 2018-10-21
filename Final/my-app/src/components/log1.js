@@ -1,9 +1,10 @@
 import React from "react";
 import reactDOM from 'react-dom';
 import sunmain from '../images/sunmain.png';
+import sign_in from "../components/sign_in";
 
 
-  const index = () => {
+  const log1 = () => {
     return(
       <div>
         <title>The Sun of the Bank Login Page</title>
@@ -26,7 +27,7 @@ import sunmain from '../images/sunmain.png';
       					</span>
 
       					<div className="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-      						<input className="input100" type="text" name="email" placeholder="Email"/>
+      						<input className="input100" type="text" name="name" placeholder="Username"/>
       						<span className="focus-input100"></span>
       						<span className="symbol-input100">
       							<i className="fa fa-envelope" aria-hidden="true"></i>
@@ -69,4 +70,4 @@ import sunmain from '../images/sunmain.png';
       </div>
   );
 };
-export default index;
+export default log1;
