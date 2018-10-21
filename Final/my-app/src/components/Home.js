@@ -1,8 +1,11 @@
 import React from "react";
-import reactDOM from 'react-dom';
+import reactDOM from 'react-dom'
+// import App from './App';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Link } from 'react-router';
 
 
-  const index = () => {
+  const Home = () => {
     return(
       <div>
         <head>
@@ -171,4 +174,4 @@ import reactDOM from 'react-dom';
     );
   };
 
-  export default index;
+  export default Home;

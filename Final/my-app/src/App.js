@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import index from "./components/index";
+import Home from "./components/Home";
 import About from "./components/About";
 import Account from "./components/Account";
 import Beneficiary from "./components/Beneficiary";
@@ -21,10 +21,11 @@ import  New_password from "./components/New_password";
 import Factor from "./components/Factor";
 import log1 from "./components/log1";
 
-import Navigation from "./components/Navigation";
+// import Navigation from "./components/Navigation";
 import Navigation1 from "./components/Navigation1";
-
-// images
+import NavBar from "./components/NavBar";
+// Links
+import {Link} from 'react-router-dom';
 
 
 
@@ -44,10 +45,20 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <div>
+      <div className="App">
+
+        <Link to='/Home' >Home</Link>
+        <Link to='/About'>About</Link>
+        <Link to='/Account'>Account</Link>
+        <Link to='/Services'>Services</Link>
+        <Link to='/Profile'>Profile</Link>
+        <Link to='/Contact'>Contact</Link>
+        <Link to='/Signout'>Signout</Link>
+
+
 
       <Switch>
-        <Route path = "/index" component = {index}/>
+        <Route path = "/Home" component = {Home}/>
         <Route path = "/About" component = {About}/>
         <Route path = "/Account" component = {Account}/>
         <Route path = "/Beneficiary" component = {Beneficiary}/>
@@ -68,8 +79,9 @@ class App extends Component {
         <Route path = "/New_password" component ={New_password}/>
         <Route path = "/log1" component ={log1}/>
         <Route path = "/log1" component ={log1}/>
-        <Route path = "/Navigation" component ={Navigation}/>
+        {/* <Route path = "/Navigation" component ={Navigation}/> */}
         <Route path = "/Navigation1" component ={Navigation1}/>
+        <Route path = "/NavBar" component = {NavBar}/>
 
       </Switch>
 
