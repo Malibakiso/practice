@@ -16,7 +16,12 @@ import Details from "./components/Details";
 // import Questions from "./components/Questions";
 import Security from "./components/Security";
 import Summary from "./components/Summary";
+import Change from "./components/Change";
+import  New_password from "./components/New_password";
+import Factor from "./components/Factor";
+import log1 from "./components/log1";
 
+// images
 
 
 
@@ -25,6 +30,9 @@ import style from "./style/style.css";
 import './App.css';
 import './style/bars.css';
 import './style/bootstrap.css';
+// import main from './style/main.css';
+// import util from './style/util.css';
+// import './style/font-awesome0.css';
 // import './style/bootstrap.min.css';
 // import './style/font-awesome.css';
 
@@ -52,6 +60,12 @@ class App extends Component {
         {/* <Route path = "/Questions" component ={Questions}/> */}
         <Route path = "/Security" component ={Security}/>
         <Route path = "/Summary" component ={Summary}/>
+        <Route path = "/Change" component ={Change}/>
+        <Route path = "/Factor" component ={Factor}/>
+        <Route path = "/New_password" component ={New_password}/>
+        <Route path = "/log1" component ={log1}/>
+
+
 
       </Switch>
 

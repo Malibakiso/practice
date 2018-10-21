@@ -1,6 +1,6 @@
 import React from "react";
 import reactDOM from 'react-dom';
-import sunmain from './sunmain.png';
+import sunmain from '../images/sunmain.png';
 
   const Change = () => {
     return(
@@ -16,7 +16,7 @@ import sunmain from './sunmain.png';
       		<div className="container-login100">
       			<div className="wrap-login100">
       				<div className="login100-pic js-tilt" data-tilt>
-      					<img src={sunmain} alt="IMG"/>
+      					<img src={sunmain} alt="logo"/>
       				</div>
 
       				<form className="login100-form validate-form">
