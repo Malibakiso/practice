@@ -79,10 +79,11 @@ class App extends Component {
         <Route path = "/Factor" component ={Factor}/>
         <Route path = "/New_password" component ={New_password}/>
         <Route path = "/log1" component ={log1}/>
-        <Route path = "/log1" component ={log1}/>
+        <Route path = "/sign_in" component ={sign_in}/>
         {/* <Route path = "/Navigation" component ={Navigation}/> */}
         <Route path = "/Navigation1" component ={Navigation1}/>
         <Route path = "/NavBar" component = {NavBar}/>
+
 
       </Switch>
 

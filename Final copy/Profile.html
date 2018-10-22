@@ -1,0 +1,587 @@
+<!-- Page Description: This page includes the profile of the client
+     Date Modified: 17 October 2018
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+<title>The Bank of the Sun</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Corporate Bank a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!-- .css files -->
+	<link href="css/bars.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+
+	<!-- Favicon -->
+      <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+      <!-- Bootstrap CSS -->
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Animate CSS -->
+      <link href="assets/vendors/animate/animate.css" rel="stylesheet">
+      <!-- Icon CSS-->
+      <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css">
+      <!-- Camera Slider -->
+      <link rel="stylesheet" href="assets/vendors/camera-slider/camera.css">
+      <!-- Owlcarousel CSS-->
+      <link rel="stylesheet" type="text/css" href="assets/vendors/owl_carousel/owl.carousel.css" media="all">
+      <!--Template Styles CSS-->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+   </head>
+<!-- //.css files -->
+
+<!-- Default-JavaScript-File -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- //Default-JavaScript-File -->
+
+<!-- fonts -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Ropa+Sans:400,400i&amp;subset=latin-ext" rel="stylesheet">
+<!-- //fonts -->
+
+<!-- scrolling script -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- //scrolling script -->
+<style>
+body {
+  background: #d7d9d9;
+  width: 100%;
+  margin: 60px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  text-align: center;
+  color: #8f9496;
+}
+
+article {
+  background: #00000;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  float: left;
+  width: 140px;
+  margin: 0 auto 40px auto;
+  -webkit-box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.24);
+}
+
+.card-header {
+  padding: 4px;
+  background: rgba(50, 50, 50, 50);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-header button {
+  font-size: 13px;
+  cursor: pointer;
+  width: 100%;
+  background: #3498db;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card-header button:hover {
+  background: #51a7e0;
+}
+
+.card-header img {
+  width: 132px;
+  border-radius: 2px;
+}
+
+.card-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-links hr {
+  border-bottom: 0;
+  border-top: 1px solid #ddd;
+  margin: 0;
+}
+
+.card-links a {
+  text-decoration: none;
+  color: rgba(50, 50, 50, 50);
+}
+
+.card-links a li {
+  margin: 0;
+  padding: 14px 6px;
+  border-left: 4px solid #fff;
+  transition: background-color 0.2s ease,
+              border-left 0.2s ease,
+              color 0.2s ease;
+}
+
+.card-links a li:hover {
+  border-left: 4px solid #3498db;
+  background: rgba(50, 50, 50, 50);
+  color: #44474a;
+}
+
+.card-links a li.active {
+  border-left: 4px solid #e74c3c !important;
+  background: #f6f6f6;
+  color: #44474a;
+}
+
+.card-links a li i {
+  position: absolute;
+  margin-left: 4px;
+}
+
+.link-favorites {
+  border-bottom-left-radius: 4px;
+}
+
+.label {
+  position: relative;
+  left: 26px;
+  top: -1px;
+  font-size: 12px;
+}
+
+.label-notification {
+  float: right;
+  font-size: 10px;
+  color: #8f9496;
+  background: #eceded ;
+  padding: 4px;
+  border-radius: 4px;
+  margin: -2px 4px 0 0;
+  transition: background-color 0.2s ease,
+              color 0.2s ease;
+}
+
+.card-links a li:hover .label-notification,
+.label-active {
+  color: #44474a;
+  background: #d7d9d9;
+}
+
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
+}
+
+.btn{
+ padding: 18px 28px;
+    font-size:18px;
+    font-weight: 500;
+    border-radius:5px;
+    text-decoration: none !important;
+    display: inline-block;
+    border: 0;
+    color: #222222;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    -webkit-transform: skew(-8deg);
+ -moz-transform: skew(-8deg);
+ -o-transform: skew(-8deg);
+}
+.font_30{font-size:30px !important;}
+
+.btn-default {
+    background-image: linear-gradient(to right top ,#6871f4,#6871f4,#6871f48f,#265db9 ,#265db9b0 )!important;
+    color: #fff !important;
+}
+.btn-default:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.btn-default:hover:before, .btn-default:focus:before {
+    transform: scaleY(1);
+    color: #fff!important;
+    border-radius: 5px;
+}
+.btn-default:hover .skew_14{
+  color:#fff;
+}
+.btn-primary {
+   background: #504cf5 !important;
+    color: #fff !important;
+  }
+
+.btn-primary:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background:#f256c8 !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.btn-primary:hover:before, .btn-primary:focus:before {
+    transform: scaleY(1);
+    color: #fff !important;
+    border-radius: 5px;
+}
+.btn_text_cap{
+  text-transform: capitalize !important;
+  font-size: 20px;
+padding: 12px 28px;
+}
+.btn_bg_f{
+  background:#fff !important;
+  color:#000 !important;
+}
+.btn_bg_f:hover{
+  color:#fff !important;
+}
+
+.blog-img:before,.blog-img:after{
+  position:absolute;
+  top:0;
+  width:0;
+  height:100%;
+  content:"";
+  transition:all .5s;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  opacity:.5;
+}
+.blog-img:before{
+  left:0;
+}
+.blog-wrap:hover .blog-img:before{
+  width:50%;
+}
+.blog-img:after{
+  right:0;
+}
+.blog-wrap:hover .blog-img:after{
+  width:50%;
+}
+.blog-meta{
+  margin-bottom:10px;
+}
+.blog-meta ul li{
+  display:inline-block;
+  margin-right:10px;
+}
+.blog-meta ul li a{
+  color:#555 !important;
+}
+.blog-meta ul li a:hover{
+  color:#296dc1;
+}
+.blog-meta ul li a i{
+  margin-right:3px;
+}
+.blog-content{
+  position:relative;
+  padding:20px 20px 30px;
+  border-bottom:2px solid #c3c3c3;
+}
+.blog-content:before,.blog-content:after{
+  position:absolute;
+  left:0;
+  bottom:-2px;
+  width:10%;
+  height:2px;
+  background: #296dc1;
+  content:"";
+  transition:all .5s;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  opacity:.7;
+}
+.blog-wrap:hover .blog-content:before,.blog-wrap:hover .blog-content:after{
+  width:50%;
+}
+.blog-content:after{
+  left:auto;
+  right:0;
+}
+.blog-content h3{
+  margin-bottom:15px;
+}
+.blog-content h3 a{
+  font-size:20px;
+  text-transform:capitalize;
+  color:#555!important;
+}
+.blog-content p{
+  margin-bottom:20px;
+  line-height:24px;
+}
+.blog-content a.btn-style{
+  border:1px solid #296dc1;
+}
+
+.blog-img img {
+    width: 100%;
+}
+
+</style>
+</head>
+<!-- //Head -->
+<!-- Body -->
+<body>
+	<div class="top-main">
+		<div class="number">
+			<h3><i class="fa fa-phone" aria-hidden="true"></i>021 2320 564</h3>
+			<div class="clearfix"></div>
+		</div>
+		<div class="social-icons">
+		<ul class="top-icons">
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+		</ul>
+		<div class="form-top">
+		  <form action="#" method="post" class="navbar-form navbar-left">
+			<div class="form-group">
+				<input type="search" class="form-control" placeholder="Search">
+			</div>
+				<button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+				<!-- <button type="submit" class="btn btn-default">Submit</button> -->
+			</form>
+		</div>
+			<div class="clearfix"></div>
+		</div>
+			<div class="clearfix"></div>
+	</div>
+		<!-- Top-Bar -->
+		<div class="top-bar">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right" data-in="" data-out="">
+							<li class="active"><a href="index.html">home</a></li>
+							<li><a href="About.html">about</a></li>
+							<li><a href="Services.html">services</a></li>
+							<li><a href="Account.html">account</a></li>
+							<li><a href="Profile.html">profile</a></li>
+							<li><a href="Contact.html">contact</a></li>
+							<li><a href="Signout.html">signout</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="logo">
+			<a href="index.html"><!--<i class="fa fa-inr" aria-hidden="true"></i>--> The Bank<span> of the Sun</span></a>
+		</div>
+
+		<!-- ::::::::::::::::::::: Profile Section:::::::::::::::::::::::::: -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<div id="profile-container">
+		   <image id="profileImage" src="#" />
+		</div>
+		<input id="imageUpload" type="file"
+		       name="profile_photo" placeholder="Photo" required="" capture>
+
+		<article>
+		    <div class="card-header">
+		      <img class="profile-photo">
+		    </div>
+		    <ul class="card-links">
+		      <a href="active">
+		        <li>
+		          <i class="icon icon-user"></i><span class="label">Profile</span></span>
+		        </li>
+		      </a>
+		      <hr>
+		      <a href="Beneficiary.html">
+		        <li class="#">
+		          <i class="icon icon-list-alt"></i><span class="label">Beneficiaries</span></span>
+		        </li>
+		      </a>
+		      <hr>
+		      <a href="#">
+		        <li>
+		          <i class="icon icon-time"></i><span class="label">Buy</span></span>
+		        </li>
+		      </a>
+		      <hr>
+		      <a href="#">
+		        <li>
+		          <i class="icon icon-file-text-alt"></i><span class="label">Manage</span></span>
+		        </li>
+		      </a>
+		      <hr>
+		      <a href="FAQ.html">
+		        <li class="link-favorites">
+		          <i class="icon icon-heart"></i><span class="label">Help</span></span>
+		        </li>
+		      </a>
+		    </ul>
+		  </article><br>
+			<!-- //Top-Bar -->
+			<br>
+<section class="blog-area ptb-140 bg-1">
+						<div class="container">
+								<div class="row">
+										<div class="col-md-4 col-sm-6 col-xs-12 col">
+												<div class="blog-wrap mb-30">
+														<div class="blog-img">
+																<img src="images/details.png" alt="">
+														</div>
+														<div class="blog-content wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+																<div class="blog-meta">
+
+
+																</div>
+																<h3><a href="Details.html">Details</a></h3>
+
+																<a href="Details.html" class="btn btn-default btn_font_16">Click Here</a>
+														</div>
+												</div>
+										</div>
+										<div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+												<div class="blog-wrap  mb-30">
+														<div class="blog-img">
+																<img src="images/security.png" alt="">
+														</div>
+														<div class="blog-content">
+																<div class="blog-meta">
+
+																</div>
+																<h3><a href="Security.html">Security</a></h3>
+
+																<a href="Security.html" class="btn btn-default btn_font_16">Click Here</a>
+														</div>
+												</div>
+										</div>
+										<div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+												<div class="blog-wrap  mb-30">
+														<div class="blog-img">
+																<img src="images/summary.png" alt="">
+														</div>
+														<div class="blog-content">
+																<div class="blog-meta">
+
+																</div>
+																<h3><a href="Summary.html">Summary</a></h3>
+
+																<a href="Summary.html" class="btn btn-default btn_font_16">Click Here</a>
+														</div>
+												</div>
+												 </div>
+												</div>
+										</div>
+								</div>
+						</div>
+				</section>
+<br>
+<br>
+	<!-- //footer -->
+
+	<section class="copyright">
+		<div class="agileits_copyright text-center">
+				<p>© 2018 The Bank of The Sun. All rights reserved | Design by <a href="//w3layouts.com/" class="w3_agile">Control Alt elite</a></p>
+		</div>
+	</section>
+	<!-- //copyright -->
+
+		<script src="js/jarallax.js"></script>
+		<script src="js/SmoothScroll.min.js"></script>
+		<script type="text/javascript">
+			/* init Jarallax */
+			$('.jarallax').jarallax({
+				speed: 0.5,
+				imgWidth: 1366,
+				imgHeight: 768
+			})
+		</script>
+
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+
+		<!-- here stars scrolling icon -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+					var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear'
+					};
+				*/
+
+				$().UItoTop({ easingType: 'easeOutQuart' });
+
+				});
+		</script>
+		<!-- //here ends scrolling icon -->
+		<script src="js/bars.js"></script>
+	</body>
+	<!-- //Body -->
+	</html>
+	<!-- //html -->

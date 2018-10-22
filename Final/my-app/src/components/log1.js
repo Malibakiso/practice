@@ -1,7 +1,7 @@
 import React from "react";
 import reactDOM from 'react-dom';
 import sunmain from '../images/sunmain.png';
-import sign_in from "../components/sign_in";
+import sign_in from "./components/sign_in";
 
 
   const log1 = () => {
