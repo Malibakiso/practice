@@ -18,16 +18,17 @@ was tasked with implementation including use of HTML,CSS, JavaScript an react.js
 
 ## Deployment
 
-URL: 
+URL : ()
 
 ## Built With
 
-* [JavaScript](http://www.dropwizard.io/1.0.2/docs/) 
-* [CSS](http://www.dropwizard.io/1.0.2/docs/) 
-* [HTML](https://maven.apache.org/) 
-* [React.js](https://rometools.github.io/rome/) - Front end development framework
+* [JavaScript](https://www.javascript.com/) 
+* [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
+* [HTML](https://en.wikipedia.org/wiki/HTML) 
+* [React.js](https://reactjs.org/) - Front end development framework
 
 
 ## Acknowledgments
 * Mr Richard Barnett
 * Tutors
+* Stellenbosch University 
