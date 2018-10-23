@@ -1,7 +1,7 @@
 # group-project-control-alt-elite
 # Group 1F
 
-# The Bank of Sun Online Banking Application
+# The Bank of Sun Online Banking
 
 A small local bank, The Bank of the Sun, has realised that its personal online banking offering is no longer
 appropriate for banking in 2018. To this end, the bank has contracted your group to develop a new online
@@ -12,8 +12,7 @@ followed by some design mockups and then a functioning prototype.
 
 ## About
 
-This project is the group assessment for Socio Informatics/Information Systems Management 354. Groups consisted of 4/5 members and
-was tasked with implementation including use of HTML,CSS, JavaScript an react.js.
+This project is the group assessment for Socio Informatics/Information Systems Management 354. Groups consisted of 4/5 members and was tasked with implementation including use of HTML,CSS, JavaScript an react.js.
 
 
 ## Deployment
