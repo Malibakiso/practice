@@ -1,18 +1,85 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Switch} from "react-router-dom"
-import home from "./components/home";
+import ReactDOM from "react-dom";
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+// import style from './components/style.css';
+import Personal_Acc from "./components/Personal_Acc";
+import WelcomePage from "./components/WelcomePage";
+import LoginPage from "./components/LoginPage";
+import LoginForm from "./components/LoginForm";
+import RegisterForm from "./components/RegisterForm";
+import HomePage from "./components/HomePage";
+import MainNav from "./components/MainNav";
+import About from "./components/About";
+import Payments from "./components/Payments";
+import Beneficiary from "./components/Beneficiary";
+import Buy from "./components/Buy";
+import Prepaid from "./components/Prepaid";
+import Manage_Account from "./components/Manage_Account";
 
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-      <div>
-        <Nav/>
-        <Switch>
-          <Route path = "/home" component = {home}/>
-        </Switch>
+import { Link } from 'react-router-dom';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
-      </div>
+// import bootstrap from "./components/bootstrap.css";
+class App extends React.Component{
+
+  constructor(props){
+    super(props);
+    this.state = {username:"", password:""};
+    this.storeLogin = this.storeLogin.bind(this);
+  }
+
+  storeLogin(username, password){
+    this.setState({ username: username, password: password});
+    console.log(this.state);
+  }
+
+// }
+// const App = () => (
+//
+//       <div className= "ui container">
+
+render(){
+  // console.log(this.state);
+  return(
+<BrowserRouter>
+  <div>
+        <Link to='/HomePage' >Home</Link><br/>
+        <Link to='/About'>About</Link><br/>
+        <Link to ='/Payments'>Payments</Link><br/>
+        <Link to='/Buy'>Buy</Link><br/>
+        <Link to='/Transfer'>Transfer</Link><br/>
+        <Link to='/Manage_Account'>Manage Account</Link><br/>
+        <Link to='/Sign_Out'>Sign Out</Link><br/>
+        <Link to='/Personal_Acc'>Personal_Acc</Link><br/>
+
+
+      <Route path="/" exact component={WelcomePage}/>
+      <Route path="/LoginPage" render={props=> <LoginPage username={this.state.username} password={this.state.password} store={this.storeLogin}/>}/>
+      <Route path="/LoginForm" exact component={LoginForm}/>
+      <Route path="/RegisterForm" exact component={RegisterForm}/>
+      <Route path="/HomePage" exact component={HomePage}/>
+      <Route path="/MainNav" exact component={MainNav}/>
+      <Route path="/About" exact component={About}/>
+      <Route path="/Payments" exact component={Payments}/>
+      <Route path="/Beneficiary" exact component={Beneficiary}/>
+      <Route path="/Buy" exact component={Buy}/>
+      <Route path="/Prepaid" exact component={Prepaid}/>
+      <Route path="/Manage_Account" exact component={Manage_Account}/>
+      <Route path="/Personal_Acc" render={props=> <Personal_Acc username={this.state.username} password={this.state.password}/>}/>
+      {/* <Route component = {Error} /> */}
+    </div>
+    </BrowserRouter>
     );
   }
 }
