@@ -88,7 +88,7 @@ class RegisterForm extends React.Component{
   placeholder="Enter your secure password"/>
  </Form.Field>
 
- <Link to="/LoginForm">SUBMIT</Link>
+ <Link to="/LoginPage">SUBMIT</Link>
 
       </Form>
     );

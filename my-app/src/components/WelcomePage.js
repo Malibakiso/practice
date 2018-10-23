@@ -6,7 +6,7 @@ const WelcomePage = () => (
       <div>
         <h1>WELCOME TO THE BANK OF THE SUN</h1>
 
-      <Link to="/LoginForm">LOGIN</Link>
+      <Link to="/LoginPage">LOGIN</Link>
       <br/>
       <Link to="/RegisterForm">REGISTER</Link>
 

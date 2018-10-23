@@ -9,87 +9,68 @@ import ReactTable from "react-table";
 import 'react-table/react-table.css';
 
 export default class Personal_Acc extends React.Component {
-
+  
   constructor(props){
     super(props);
-    this.state= {transactions: []}
+    this.state = {
+      username:"lazymeercat116",
+      password:"hottest",
+      columns: [
+        {
+          Header: 'Type',
+          accessor: 'type'
+        },
+        {
+          Header: 'Amount',
+          accessor: 'amount',
+          
+        },
+        {
+          Header: 'Current Balance',
+          accessor: 'balance',
+        },
+      ],
+      transactions: [],
+      accountName: [],
+    }
   }
-
+  
   componentDidMount(){
     const hmac = new jsSha('SHA-256','TEXT');
-    hmac.setHMACKey(this.props.password, 'TEXT');
-    hmac.update(this.props.username);
+    hmac.setHMACKey(this.state.password, 'TEXT');
+    hmac.update(this.state.username);
     hmac.update(Date.now().toString(36).substring(0, 4));
-
-    const token = `${hmac.getHMAC('HEX')}%${this.props.username}`;
+    
+    const token = `${hmac.getHMAC('HEX')}%${this.state.username}`;
     const api = axios.create({
       baseURL: 'http://45.77.58.134:8080',
       headers: { 'Authorization': 'Bearer ' + token }
     });
-
-
+    
+    
     (async () => {
-      try{
-        const res = await api.get('/clients');
-        const accounts = await api.get(`/accounts/${res.data[0]._id}`)
-        const transactions = await api.get(`/transactions/${accounts.data[0]._id}/.*`)
-        console.log(transactions.data);
-        console.log(accounts);
-        this.setState({transactions: transactions.data})
-      } catch (e){
-        console.log(e)
-      }
-
+      const res = await api.get('/clients');
+      const accounts = await api.get(`/accounts/${res.data[0]._id}`)
+      const transactions = await api.get(`/transactions/${accounts.data[0]._id}/.*`)
+      // console.log(res);
+      // console.log(transactions.data);
+      console.log(accounts);
+      this.setState({transactions: transactions.data, accountName: accounts.data[0].description})
     })();
   }
-
-  render() { return(
-
-
-        <div>
-          <ul>
-            {this.state.transactions.map(x =>
-              <li key={x._id}>
-                {`${x.type} ${x.amount} | ${x.balance}`}
-              </li>
-            )}
-          </ul>
-          <h1>PERSONAL ACCOUNT</h1>
-          <h2>{this.props.username}</h2>
-          <Table striped>
-         <thead>
-           <tr>
-             <th>Client ID</th>
-             <th>Client Balance</th>
-             <th>Client</th>
-             <th>Client Description</th>
-             <th>Client Account Type</th>
-           </tr>
-         </thead>
-         <tbody>
-           <tr>
-             <th scope="row">1</th>
-             <td>R5000</td>
-             <td></td>
-             <td></td>
-             <td></td>
-           </tr>
-           <tr>
-             <th scope="row">2</th>
-             <td>####</td>
-             <td>####</td>
-             <td>####</td>
-             <td>####</td>
-           </tr>
-           <tr>
-             <th scope="row">3</th>
-             <td>####</td>
-             <td>####</td>
-             <td>####</td>
-             <td>####</td>
-           </tr>
-         </tbody>
-       </Table>
+  
+  render() {
+    return(
+      <div>
+        <h1>PERSONAL ACCOUNT</h1>
+        <h2>{this.state.username}</h2>
+        <p>{this.state.accountName}</p>
+        <ReactTable
+          data={this.state.transactions}
+          columns={this.state.columns}
+        >
+        </ReactTable>
       </div>
-    )}
+    )
+  }
 }

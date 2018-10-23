@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from "react-dom";
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 // import style from './components/style.css';
 import Header from "./components/Header";
 
 import Personal_Acc from "./components/Personal_Acc";
 import WelcomePage from "./components/WelcomePage";
 import LoginPage from "./components/LoginPage";
-import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
 import HomePage from "./components/HomePage";
 import MainNav from "./components/MainNav";
@@ -18,7 +17,6 @@ import Buy from "./components/Buy";
 import Prepaid from "./components/Prepaid";
 import Manage_Account from "./components/Manage_Account";
 
-import { Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -38,7 +36,7 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {username:"", password:""};
-    this.storeLogin = this.storeLogin.bind(this);
+    this.state.storeLogin = this.storeLogin.bind(this);
   }
 
   storeLogin(username, password){
@@ -52,11 +50,10 @@ class App extends React.Component{
         <div>
           <Header></Header>
           
-          <Route path="/" exact component={WelcomePage}/>
-          <Route path="/LoginPage" render={props=> <LoginPage username={this.state.username} password={this.state.password} store={this.storeLogin}/>}/>
-          <Route path="/LoginForm" exact component={LoginForm}/>
+          <Route path="/" exact component={HomePage}/>
+          <Route path="/LoginPage" exact component={props=> <LoginPage username={this.state.username} password={this.state.password} store={this.state.storelogin}/>}/>
           <Route path="/RegisterForm" exact component={RegisterForm}/>
-          <Route path="/HomePage" exact component={HomePage}/>
+          {/* <Route path="/HomePage" exact component={HomePage}/> */}
           <Route path="/MainNav" exact component={MainNav}/>
           <Route path="/About" exact component={About}/>
           <Route path="/Payments" exact component={Payments}/>

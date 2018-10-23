@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 
 const Header = () => (
   <div>
-    <Link to='/HomePage' >Home</Link><br/>
+    <Link to='/'>Home</Link><br/>
     <Link to='/About'>About</Link><br/>
     <Link to ='/Payments'>Payments</Link><br/>
     <Link to='/Buy'>Buy</Link><br/>
