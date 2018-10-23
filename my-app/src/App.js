@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 // import style from './components/style.css';
+import Header from "./components/Header";
+
 import Personal_Acc from "./components/Personal_Acc";
 import WelcomePage from "./components/WelcomePage";
 import LoginPage from "./components/LoginPage";
@@ -44,42 +46,28 @@ class App extends React.Component{
     console.log(this.state);
   }
 
-// }
-// const App = () => (
-//
-//       <div className= "ui container">
-
-render(){
-  // console.log(this.state);
-  return(
-<BrowserRouter>
-  <div>
-        <Link to='/HomePage' >Home</Link><br/>
-        <Link to='/About'>About</Link><br/>
-        <Link to ='/Payments'>Payments</Link><br/>
-        <Link to='/Buy'>Buy</Link><br/>
-        <Link to='/Transfer'>Transfer</Link><br/>
-        <Link to='/Manage_Account'>Manage Account</Link><br/>
-        <Link to='/Sign_Out'>Sign Out</Link><br/>
-        <Link to='/Personal_Acc'>Personal_Acc</Link><br/>
-
-
-      <Route path="/" exact component={WelcomePage}/>
-      <Route path="/LoginPage" render={props=> <LoginPage username={this.state.username} password={this.state.password} store={this.storeLogin}/>}/>
-      <Route path="/LoginForm" exact component={LoginForm}/>
-      <Route path="/RegisterForm" exact component={RegisterForm}/>
-      <Route path="/HomePage" exact component={HomePage}/>
-      <Route path="/MainNav" exact component={MainNav}/>
-      <Route path="/About" exact component={About}/>
-      <Route path="/Payments" exact component={Payments}/>
-      <Route path="/Beneficiary" exact component={Beneficiary}/>
-      <Route path="/Buy" exact component={Buy}/>
-      <Route path="/Prepaid" exact component={Prepaid}/>
-      <Route path="/Manage_Account" exact component={Manage_Account}/>
-      <Route path="/Personal_Acc" render={props=> <Personal_Acc username={this.state.username} password={this.state.password}/>}/>
-      {/* <Route component = {Error} /> */}
-    </div>
-    </BrowserRouter>
+  render(){
+    return(
+      <BrowserRouter>
+        <div>
+          <Header></Header>
+          
+          <Route path="/" exact component={WelcomePage}/>
+          <Route path="/LoginPage" render={props=> <LoginPage username={this.state.username} password={this.state.password} store={this.storeLogin}/>}/>
+          <Route path="/LoginForm" exact component={LoginForm}/>
+          <Route path="/RegisterForm" exact component={RegisterForm}/>
+          <Route path="/HomePage" exact component={HomePage}/>
+          <Route path="/MainNav" exact component={MainNav}/>
+          <Route path="/About" exact component={About}/>
+          <Route path="/Payments" exact component={Payments}/>
+          <Route path="/Beneficiary" exact component={Beneficiary}/>
+          <Route path="/Buy" exact component={Buy}/>
+          <Route path="/Prepaid" exact component={Prepaid}/>
+          <Route path="/Manage_Account" exact component={Manage_Account}/>
+          <Route path="/Personal_Acc" render={props=> <Personal_Acc username={this.state.username} password={this.state.password}/>}/>
+          {/* <Route component = {Error} /> */}
+        </div>
+      </BrowserRouter>
     );
   }
 }
