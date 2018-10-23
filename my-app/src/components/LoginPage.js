@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import jsSha from 'jssha';
-import {Link} from 'react-router-dom';
 
 export default class LoginPage extends React.Component {
   state = {
@@ -25,9 +24,6 @@ export default class LoginPage extends React.Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    
-    const username = this.state.username;
-    const password = this.state.password;
 
     const hmac = new jsSha('SHA-256','TEXT');
     hmac.setHMACKey(this.state.password, 'TEXT');
@@ -42,9 +38,9 @@ export default class LoginPage extends React.Component {
 
     (async () => {
       const res = await api.get('/clients');
-      console.log(this.props);
-      // this.props.store(username, password);
-      // window.location = '/Personal_Acc';
+      if(res) {
+        window.location = '/PersonalAcc';
+      }
     })();
 
     this.setState({

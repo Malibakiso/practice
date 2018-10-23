@@ -1,14 +1,11 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import ReactDOM from "react-dom";
-import { Table } from 'reactstrap';
+import React from 'react';
 import axios from 'axios';
 import jsSha from 'jssha';
 
 import ReactTable from "react-table";
 import 'react-table/react-table.css';
 
-export default class Personal_Acc extends React.Component {
+export default class PersonalAcc extends React.Component {
   
   constructor(props){
     super(props);
