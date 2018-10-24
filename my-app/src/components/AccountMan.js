@@ -1,11 +1,11 @@
 import React from 'react';
 import reactCSS from 'reactcss'
 import { Table } from 'reactstrap';
-import logo from '../logo.jpeg'
+// import logo from '../logo.jpeg'
 
 const AccountMan = () => (
       <div className="acc-man">
-        <img src={logo} height="300" width="300" className="logo"/>
+        {/* <img src={logo} height="300" width="300" className="logo"/> */}
         <div className="container">
           <div className="split-left">
             <h1> My Personal Account </h1>

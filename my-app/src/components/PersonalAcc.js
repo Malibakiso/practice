@@ -58,7 +58,7 @@ export default class PersonalAcc extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className="Container">
         <h1>PERSONAL ACCOUNT</h1>
         <h2>{this.state.username}</h2>
         <p>{this.state.accountName}</p>
