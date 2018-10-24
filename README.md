@@ -14,7 +14,7 @@ Control Alt Elite took the philosophy and motto of "Simplifying complexity", thi
 
 ## About
 
-This project is the group assessment for Socio Informatics/Information Systems Management 354. Groups consisted of 4/5 members and was tasked with implementation including use of HTML,CSS, JavaScript an react.js.
+This project is the group assessment for Socio Informatics/Information Systems Management 354. Groups consisted of 4/5 members and was tasked with implementation including use of HTML, CSS, JavaScript and Bootstrap. 
 
 
 ## Deployment
