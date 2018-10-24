@@ -84,7 +84,7 @@ export default class HomePage extends React.Component {
 
   render() {
     return(
-      <div class="container">
+      <div class="table-homepage">
         <Container>
         <h1>Personal details</h1>
         <h2>Username : {this.state.username}</h2>
