@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const Header = () => (
 
-<div>
+<div class ="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">The Bank of the Sun</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +11,7 @@ const Header = () => (
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto mt-2lg-0">
         <li class="nav-item active">
           <a class="nav-link" href="/HomePage">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -21,30 +21,30 @@ const Header = () => (
         <li class="nav-item">
           <a class="nav-link" href="/Payments">Payments</a>
         </li>
-        <li class="nav-item">
+        {/* <li class="nav-item">
           <a class="nav-link" href="/ScheduledPayments">Scheduled Payments</a>
-        </li>
+        </li> */}
         <li class="nav-item">
-          <a class="nav-link" href="/Buy">Prepaid & Utility Services</a>
+          <a class="nav-link" href="/Buy">Services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/Transfers">Transfers</a>
         </li>
-        <li class="nav-item">
+        {/* <li class="nav-item">
           <a class="nav-link" href="/InterAccount">Inter-Account Transfers</a>
+        </li> */}
+        <li class="nav-item">
+          <a class="nav-link" href="/AccountMan">Account</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/AccountMan">Account Management</a>
+          <a class="nav-link" href="/ContactUs">Contact  Us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/ContactUs">Contact Us</a>
-        </li>
-        <li class="nav-item">
+        {/* <li class="nav-item">
           <a class="nav-link" href="/FAQ">FAQs</a>
-        </li>
-        <li class="nav-item">
+        </li> */}
+        {/* <li class="nav-item">
           <a class="nav-link" href="/Sign_Out">Sign Out</a>
-        </li>
+        </li> */}
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>

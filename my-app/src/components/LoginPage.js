@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import jsSha from 'jssha';
+import {Container} from 'reactstrap';
 
 export default class LoginPage extends React.Component {
   state = {
@@ -53,10 +54,11 @@ export default class LoginPage extends React.Component {
     const isLoggedIn = false;
     return (
       <div>
-        <div>
+        
+        <div class = "container">
           <h2>Log In</h2>
           Username:
-          <input 
+          <input
             type="text"
             name = "username"
             placeholder = "Your Username"
@@ -64,7 +66,7 @@ export default class LoginPage extends React.Component {
             onChange = {e => this.change(e)}
           />
           Password:
-          <input 
+          <input
             name = "password"
             type="password"
             placeholder = "Your Password"

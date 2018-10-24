@@ -117,7 +117,7 @@ a img {
 	border-radius: 4px;
 }
 .btn:hover {
-	background: #F60;
+	background: green;
 	color: #fff;
 }
 
