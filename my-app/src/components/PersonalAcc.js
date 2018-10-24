@@ -6,12 +6,12 @@ import ReactTable from "react-table";
 import 'react-table/react-table.css';
 
 export default class PersonalAcc extends React.Component {
-  
+
   constructor(props){
     super(props);
     this.state = {
-      username:"lazymeercat116",
-      password:"hottest",
+      username:"redfrog136",
+      password:"lalakers",
       columns: [
         {
           Header: 'Type',
@@ -20,7 +20,7 @@ export default class PersonalAcc extends React.Component {
         {
           Header: 'Amount',
           accessor: 'amount',
-          
+
         },
         {
           Header: 'Current Balance',
@@ -31,20 +31,20 @@ export default class PersonalAcc extends React.Component {
       accountName: [],
     }
   }
-  
+
   componentDidMount(){
     const hmac = new jsSha('SHA-256','TEXT');
     hmac.setHMACKey(this.state.password, 'TEXT');
     hmac.update(this.state.username);
     hmac.update(Date.now().toString(36).substring(0, 4));
-    
+
     const token = `${hmac.getHMAC('HEX')}%${this.state.username}`;
     const api = axios.create({
       baseURL: 'http://45.77.58.134:8080',
       headers: { 'Authorization': 'Bearer ' + token }
     });
-    
-    
+
+
     (async () => {
       const res = await api.get('/clients');
       const accounts = await api.get(`/accounts/${res.data[0]._id}`)
@@ -55,7 +55,7 @@ export default class PersonalAcc extends React.Component {
       this.setState({transactions: transactions.data, accountName: accounts.data[0].description})
     })();
   }
-  
+
   render() {
     return(
       <div>

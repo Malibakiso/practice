@@ -1,33 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import ReactDOM from "react-dom";
+import { Container } from 'reactstrap';
 
-const Contact_FAQ = () => (
+const FAQ = () => (
 <div>
-
-  <section className="about" id="about">
-            <div className="container">
-              <div className="about-heading">
-                <h2>Frequently Asked Questions</h2>
-              </div>
-              <div className="about-grids">
-                <div className="col-md-6 about-left">
-                  <img src="images/box-1.jpg" alt />
-                </div>
-                <div className="col-md-6 about-right">
-                  <h3>The Bank of the Sun, pride themselves in making sure our clients needs are always met.</h3>
-                  <p>Sometimes banking is not as easy as it seems, with that being said we at The Bank of the Sun are always looking to enhance our systems just for you!</p>
-                  <p>We create and deliver innovative advisory, funding, trading, corporate banking and principal investing
-                    solutions for our clients. We are innovative thinkers who turn challenges into opportunities.</p>
-                  <div className="more">
-                    <a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
-                  </div>
-                </div>
-                <div className="clearfix" />
-              </div>
-            </div>
-          </section>
-          {/* //about */}
+ <Container>
           <section className="about" id="about">
             <div className="container">
               <div className="about-heading">
@@ -37,7 +15,7 @@ const Contact_FAQ = () => (
                   <img src="images/faqsmain.png" alt />
                 </div>
                 <div className="col-md-6 about-right">
-                  <h3>Our FAQs..</h3>
+                  <h3>Our Frequently Asked Questions..</h3>
                   <br />
                   <h6>What are the benefits of the Internet Banking service?</h6>
                   <p>•It is a simple, convenient and timely way to access and transact on your account. <br />
@@ -73,34 +51,11 @@ const Contact_FAQ = () => (
           </section>
 
           <div className="clearfix" />
-
-          <section className="contact" id="contact">
-          <div className="container">
-            <div className="contact-heading">
-              <h3>Contact Us</h3>
-            </div>
-            <div className="contact-grids">
-              <div className=" col-md-6 contact-form">
-                <form action="https://cms.jotform.com/uploads/answers/answer/btzap/595457_111.jpg" method="post">
-                  <input type="text" placeholder="Subject" required />
-                  <input type="text" placeholder="Your name" required />
-                  <input type="email" placeholder="Your mail" required />
-                  <textarea placeholder="Message" required defaultValue={""} />
-                  <div className="submit1">
-                    <input type="submit" defaultValue="submit" />
-                  </div>
-                </form>
-              </div>
-              <div className=" col-md-6 map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4258.600614926214!2d18.863204715729832!3d-33.932657080638556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcdb25d605f7069%3A0xb8a7267b68e9efcd!2sNeelsie+Student+Centre%2C+Stellenbosch+Central%2C+Stellenbosch%2C+7600%2C+South+Africa!5e1!3m2!1sen!2sin!4v1539894146901" width={600} height={450} frameBorder={0} style={{border: 0}} allowFullScreen />			</div>
-              <div className="clearfix" />
-            </div>
-          </div>
-        </section>
+  </Container>
 </div>
 
 
 
 );
 
-export default Contact_FAQ;
+export default FAQ;

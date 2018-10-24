@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import ReactDOM from "react-dom";
-import { Button, Form, FormGroup, Label, Input, InputGroup, FormText, InputGroupAddon } from 'reactstrap';
+import { Button, Container, Form, FormGroup, Label, Input, InputGroup, FormText, InputGroupAddon } from 'reactstrap';
 
 const InterAccount = () => (
 
@@ -9,7 +9,7 @@ const InterAccount = () => (
   <h1>INTER-ACCOUNT TRANSFERS</h1>
 
    <h3>Transfer in between your own Accounts</h3>
-
+<Container>
   <FormGroup>
     <Label for="text">From which Account</Label>
     <Input type="select" name="accType" id="accType" placeholder="Account type">
@@ -41,6 +41,7 @@ const InterAccount = () => (
 <br/>
 <br/>
 <Button>Abort Mission..</Button>
+</Container>
 </div>
     );
 

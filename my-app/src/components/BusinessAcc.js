@@ -5,57 +5,30 @@ import jsSha from 'jssha';
 import ReactTable from "react-table";
 import 'react-table/react-table.css';
 
-export default class HomePage extends React.Component {
+export default class BusinessAcc extends React.Component {
 
   constructor(props){
     super(props);
     this.state = {
-      username:"lazymeercat116",
-      password:"hottest",
+      username:"redfrog136",
+      password:"lalakers",
       columns: [
         {
-          Header: 'Username',
-          accessor: 'usernames'
+          Header: 'Type',
+          accessor: 'type'
         },
         {
-          Header: 'Title',
-          accessor: 'title',
+          Header: 'Amount',
+          accessor: 'amount',
 
         },
-				{
-          Header: 'First Name',
-          accessor: 'first',
-
-        },
-				{
-          Header: 'Last Name',
-          accessor: 'last',
-
-        },
-				{
-          Header: 'Date of Birth',
-          accessor: 'dob',
-
-        },
-
-
         {
-          Header: 'ID',
-          accessor: 'id',
-        },
-				{
-          Header: 'Email',
-          accessor: 'email',
-
-        },
-				{
-          Header: 'Client ID',
-          accessor: '_id',
-
+          Header: 'Current Balance',
+          accessor: 'balance',
         },
       ],
-      clients: [],
-      profileDetails: [],
+      transactions: [],
+      accountName: [],
     }
   }
 
@@ -74,23 +47,23 @@ export default class HomePage extends React.Component {
 
     (async () => {
       const res = await api.get('/clients');
-      const clients = await api.get(`/clients`);
-      // const transactions = await api.get(`/clients`);
+      const accounts = await api.get(`/accounts/${res.data[0]._id}`)
+      const transactions = await api.get(`/transactions/${accounts.data[0]._id}/.*`)
       // console.log(res);
       // console.log(transactions.data);
-      console.log(clients);
-      this.setState({clients: clients.data, profileDetails: clients.data[0].description})
+      console.log(accounts);
+      this.setState({transactions: transactions.data, accountName: accounts.data[0].description})
     })();
   }
 
   render() {
     return(
       <div>
-        <h1>MY PROFILE PAGE..</h1>
+        <h1>BUSINESS ACCOUNT</h1>
         <h2>{this.state.username}</h2>
-        <p>{this.state.profileDetails}</p>
+        <p>{this.state.accountName}</p>
         <ReactTable
-          data={this.state.clients}
+          data={this.state.transactions}
           columns={this.state.columns}
         >
         </ReactTable>

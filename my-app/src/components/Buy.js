@@ -31,7 +31,7 @@ export default class Buy extends React.Component {
     hmac.setHMACKey(this.state.password, 'TEXT');
     hmac.update(this.state.username);
     hmac.update(Date.now().toString(36).substring(0, 4));
-    
+
     const token = `${hmac.getHMAC('HEX')}%${this.state.username}`;
     const api = axios.create({
       baseURL: 'http://45.77.58.134:8080',
@@ -76,7 +76,7 @@ export default class Buy extends React.Component {
                     <Input placeholder="Amount" type="number" step="1" />
                   <InputGroupAddon addonType="append">.00</InputGroupAddon>
                 </InputGroup>
-
+                <br/>
                 <Button onClick = {e => this.onSubmit('Airtime')}>Buy Airtime</Button>
               </Form>
             </Col>
@@ -98,7 +98,7 @@ export default class Buy extends React.Component {
                     <Input placeholder="Amount" type="number" step="1" />
                   <InputGroupAddon addonType="append">.00</InputGroupAddon>
                 </InputGroup>
-
+                <br/>
                 <Button onClick = {e => this.onSubmit('Data')}>Buy Data</Button>
               </Form>
             </Col>
@@ -120,7 +120,7 @@ export default class Buy extends React.Component {
                     <Input placeholder="Amount" type="number" step="1" />
                   <InputGroupAddon addonType="append">.00</InputGroupAddon>
                 </InputGroup>
-
+                <br/>
                 <Button onClick = {e => this.onSubmit('Electricity')}>Buy Electricity</Button>
               </Form>
             </Col>

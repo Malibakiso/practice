@@ -7,7 +7,7 @@ import ReactTable from "react-table";
 import 'react-table/react-table.css';
 
 
-export default class Buy extends React.Component {
+export default class ScheduledPayments extends React.Component {
 
   constructor(props){
     super(props);
@@ -22,7 +22,7 @@ export default class Buy extends React.Component {
         {
           Header: 'Term',
           accessor: 'term',
-          
+
         },
         {
           Header: 'Amount',
@@ -48,7 +48,7 @@ export default class Buy extends React.Component {
     hmac.setHMACKey(this.state.password, 'TEXT');
     hmac.update(this.state.username);
     hmac.update(Date.now().toString(36).substring(0, 4));
-    
+
     const token = `${hmac.getHMAC('HEX')}%${this.state.username}`;
     const api = axios.create({
       baseURL: 'http://45.77.58.134:8080',
@@ -70,7 +70,7 @@ export default class Buy extends React.Component {
         <Container>
           <h1>Scheduled payments</h1>
 
-          <Row>
+            <Row>
             <Col>
               <h3>Create a new scheduled payment</h3>
 
@@ -93,13 +93,12 @@ export default class Buy extends React.Component {
                     <Input placeholder="Amount" type="number" step="1" />
                   <InputGroupAddon addonType="append">.00</InputGroupAddon>
                 </InputGroup>
-
+                <br/>
                 <Button onClick = {e => this.onSubmit()}>Add payment</Button>
               </Form>
             </Col>
           </Row>
-
-          <Row>
+              <Row>
               <Col>
                 <ReactTable
                     data={this.state.payments}

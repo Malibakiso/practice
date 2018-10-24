@@ -1,9 +1,12 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import {Link} from 'react-router-dom';
+import { Button, Container, Form, FormGroup, Label, Input } from 'reactstrap';
 
 const Beneficiary = () => (
   <div>
     <h1>REGISTER A NEW BENEFICIARY</h1>
+
+<Container>
     <Form>
     <FormGroup>
       <Label for="exampleSelect">Choose your default payment account</Label>
@@ -70,6 +73,7 @@ const Beneficiary = () => (
     <br/>
     <Button>Abort Mission..</Button>
   </Form>
+ </Container>
   </div>
 );
 

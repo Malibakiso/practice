@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import ReactDOM from "react-dom";
-import { Button, Form, FormGroup, Label, Input, InputGroup, FormText, InputGroupAddon } from 'reactstrap';
+import { Button, Container, Form, FormGroup, Label, Input, InputGroup, FormText, InputGroupAddon } from 'reactstrap';
 
 const Prepaid = () => (
 
@@ -9,7 +9,7 @@ const Prepaid = () => (
         <h1>PREPAID AND UTILTIY OPTIONS</h1>
 
         <h3>Airtime</h3>
-
+<Container>
         <Form>
         <FormGroup>
           <Label for="network">Network Provider</Label>
@@ -74,6 +74,7 @@ const Prepaid = () => (
       <br/>
       <br/>
       <Button>Abort Mission..</Button>
+</Container>
       </div>
     );
 
