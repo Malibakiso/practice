@@ -12,6 +12,8 @@ import HomePage from "./components/HomePage";
 import About from "./components/About";
 import Payments from "./components/Payments";
 import Beneficiary from "./components/Beneficiary";
+import Beneficiary1 from "./components/Beneficiary1";
+import Beneficiary2 from "./components/Beneficiary2";
 import Buy from "./components/Buy";
 import ScheduledPayments from './components/ScheduledPayments';
 import Transfers from './components/Transfers';
@@ -47,6 +49,8 @@ class App extends React.Component{
           <Route path="/About" exact component={About}/>
           <Route path="/Payments" exact component={Payments}/>
           <Route path="/Beneficiary" exact component={Beneficiary}/>
+          <Route path="/Beneficiary1" exact component={Beneficiary1}/>
+          <Route path="/Beneficiary2" exact component={Beneficiary2}/>
           <Route path="/Buy" exact component={Buy}/>
           <Route path="/ScheduledPayments" exact component={ScheduledPayments}/>
           <Route path="/PersonalAcc" render={props=> <PersonalAcc username={this.state.username} password={this.state.password}/>}/>

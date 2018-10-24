@@ -2,14 +2,14 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { Button, Container, Form, FormGroup, Label, Input } from 'reactstrap';
 
-const Beneficiary = () => (
+const Beneficiary1 = () => (
   <div>
-    <h1>REGISTER A NEW BENEFICIARY</h1>
+    <Container>
+    <h1>PAY A NEW BENEFICIARY</h1>
 
-<Container>
     <Form>
     <FormGroup>
-      <Label for="exampleSelect">Choose your default payment account</Label>
+      <Label for="exampleSelect">Choose your payment account</Label>
       <Input type="select" name="select" id="exampleSelect" placeholder="Account">
         <option>Cheque Account</option>
         <option>Credit Account</option>
@@ -30,32 +30,18 @@ const Beneficiary = () => (
         <option>Capitec Bank</option>
       </Input>
     </FormGroup>
-    {/* <FormGroup>
+    <FormGroup>
+    <Label for="phone">Phone:</Label>
+    <Input type="tel" id="phone" name="phone"
+           placeholder="123-456-7890"
+           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+           required >
+    </Input>
+  </FormGroup>
+    <FormGroup>
       <Label for="text">Payment References</Label>
       <Input type="textarea" name="text" id="text" placeholder="Their reference?" /><br/>
       <Input type="textarea" name="text" id="text" placeholder="My reference?" />
-    </FormGroup> */}
-    <FormGroup tag="fieldset">
-      <legend>Proof of Payment</legend>
-      <FormGroup check>
-        <Label check>
-          <Input type="radio" name="radio1" />{' '}
-          Email
-        </Label>
-      </FormGroup>
-    <br/>
-      <FormGroup check>
-        <Label check>
-          <Input type="radio" name="radio1" />{' '}
-          SMS
-        </Label>
-      </FormGroup>
-      {/* <FormGroup check disabled>
-        <Label check>
-          <Input type="radio" name="radio1" disabled />{' '}
-          Option three is disabled
-        </Label>
-      </FormGroup> */}
     </FormGroup>
     <FormGroup>
       <Label for="text">Beneficiary's Account Number</Label>
@@ -69,7 +55,7 @@ const Beneficiary = () => (
         <option>Savings Account</option>
       </Input>
     </FormGroup>
-    <Button>Add Beneficiary</Button>
+    <Button>Pay Beneficiary</Button>
     <br/>
     <br/>
     <Button>Abort Mission..</Button>
@@ -78,4 +64,4 @@ const Beneficiary = () => (
   </div>
 );
 
-export default Beneficiary;
+export default Beneficiary1;
