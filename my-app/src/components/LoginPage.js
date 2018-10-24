@@ -54,7 +54,7 @@ export default class LoginPage extends React.Component {
     const isLoggedIn = false;
     return (
       <div>
-        
+        <section>
         <div class = "container">
           <h2>Log In</h2>
           Username:
@@ -77,7 +77,7 @@ export default class LoginPage extends React.Component {
 
         <br></br>
       </div>
-
+    </section>
       <button onClick = {e => this.onSubmit (e)}>LOG IN</button>
     </div>
     )

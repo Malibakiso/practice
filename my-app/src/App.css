@@ -31,6 +31,19 @@
   }
 } */
 
+h1{
+	color:#5A9B36;
+	font-size: 40px;
+
+}
+h3{
+	color:#5A9B36;
+
+
+}
+h4{
+	color: #5A9B36;
+}
 .container-about{
 	text-align: center;
 	margin:50px;
@@ -40,6 +53,14 @@
 	text-align: center;
 	margin:50px;
 }
+
+.faq{
+
+	margin: 30px;
+	background-color: #000;
+
+}
+
 html, body {
 	width: 100%;
 	height: 100%;

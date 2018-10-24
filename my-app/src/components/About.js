@@ -11,7 +11,7 @@ const About = () => (
       <div className="container-about">
         <div className="container">
           <div className="col-md-6 about-right">
-            <h3>The Bank of the Sun, pride themselves in making sure our clients needs are always met.</h3>
+            <h3>The Bank of the Sun</h3>
             <p>Access the true meaning of efficiency with The Bank of the Sun with it's simplified complexity!
             We create and deliver innovative advisory, funding, trading, corporate banking and principal investing
             solutions for our clients. We are innovative thinkers who turn challenges into opportunities.</p>
@@ -24,14 +24,13 @@ const About = () => (
         </div>
       </div>
     </section>
-    <br>
-    </br>
+
     <div class ="container-about2">
     <section className="about" id="about">
       <div className="container">
         <div className="about-grids">
           <div className="col-md-6 about-right">
-            <h3>Tips on stretching your retirement savings</h3>
+            <h3>Tips on retirement savings</h3>
             <p>29 August 2018: - When you finally reach retirement age, you need to be in a position where you can afford to maintain a similar lifestyle which you have been accustomed to prior to retirement. The only way to achieve this is making sure you start planning and saving for retirement much earlier.</p>
             <div className="more">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Read More</button>
@@ -43,6 +42,23 @@ const About = () => (
       </div>
     </section>
   </div>
+  <div class ="container-about2">
+  <section className="about" id="about">
+    <div className="container">
+      <div className="about-grids">
+        <div className="col-md-6 about-right">
+          <h3>Home Loan</h3>
+          <p>We take over your loan and you get rewarded for switching! You can also keep an eye on your property, get pre-approvals and more via the app.</p>
+          <div className="more">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Read More</button>
+
+          </div>
+        </div>
+        <div className="clearfix"></div>
+      </div>
+    </div>
+  </section>
+</div>
 
     <div className="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
       <div className="modal-dialog" role="document">
