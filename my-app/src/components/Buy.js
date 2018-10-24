@@ -51,16 +51,16 @@ export default class Buy extends React.Component {
   render() {
     return (
 
-      <div class= "container">
-        <h1>You can buy prepaid or utility services.</h1>
+      <div class= "container-buy">
+        <h1>You can buy prepaid or utility services</h1>
+        <br></br>
         <Container>
           <section>
-          <h3>Prepaid and utility options</h3>
+          <h5>Prepaid and utility options</h5>
           </section>
           <Row>
             <Col>
               <h3>Airtime</h3>
-
               <Form>
                 <FormGroup>
                   <Label for="network">Network Provider</Label>

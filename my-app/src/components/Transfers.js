@@ -10,7 +10,7 @@ const Transfers = () => (
 
 <div>
 
-<div>
+<div class= "container-t">
   <Link to={`/Transfers`}>Fund a Transfer Now..</Link>
   <Link to={`/Transfers1`}>Fund a Transfer on a certain Date..</Link>
   <Link to={`/Transfers2`}>Fund a Transfer more than once..</Link>

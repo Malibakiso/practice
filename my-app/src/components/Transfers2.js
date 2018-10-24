@@ -41,8 +41,8 @@ const Transfers2 = () => (
   <br/>
   <FormGroup>
     <Label for="text">Payment References</Label>
-    <Input type="textarea" name="text" id="text" placeholder="Their reference?" /><br/>
-    <Input type="textarea" name="text" id="text" placeholder="My reference?" />
+    <Input type="textarea" name="text" id="text" placeholder="Their reference" /><br/>
+    <Input type="textarea" name="text" id="text" placeholder="My reference" />
   </FormGroup>
   <br/>
   <Button>Submit & Transfer</Button>
