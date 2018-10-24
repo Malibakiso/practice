@@ -86,8 +86,8 @@ export default class HomePage extends React.Component {
     return(
       <div>
         <Container>
-        <h1>WELCOME..</h1>
-        <h2>{this.state.username}</h2>
+        <h1>Personal details</h1>
+        <h2>Username : {this.state.username}</h2>
         <p>{this.state.profileDetails}</p>
         <ReactTable
           data={this.state.clients}
