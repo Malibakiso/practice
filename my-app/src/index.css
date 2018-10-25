@@ -96,6 +96,12 @@ color: green;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 }
+
+.personal-acc-table{
+  color: black;
+  background-color: #EBEEEE;
+
+}
 p.solid {border-style: solid;
 }
 

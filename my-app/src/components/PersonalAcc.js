@@ -63,6 +63,7 @@ export default class PersonalAcc extends React.Component {
         <h2>{this.state.username}</h2>
         <p>{this.state.accountName}</p>
         <ReactTable
+          className="personal-acc-table"
           data={this.state.transactions}
           columns={this.state.columns}
         >
