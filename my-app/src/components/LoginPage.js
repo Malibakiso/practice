@@ -14,7 +14,7 @@ export default class LoginPage extends React.Component {
   }
 
   handlePassword(text){
-    this.setState({password: text.target.value})
+    this.setState({password: text.target.value}) //handles password targets
   }
 
   change = (e) => {
@@ -67,13 +67,13 @@ export default class LoginPage extends React.Component {
           />
           Password:
           <input
-            name = "password"
+            name = "password" //password inputs
             type="password"
             placeholder = "Your Password"
             value = {this.state.password}
             onChange = {e => this.change(e)}
           />
-          {isLoggedIn ? 'User logged in' : 'User not logged in'}
+          {isLoggedIn ? 'User logged in' : 'User not logged in'} //if user does not logged on it is called for better user interface and experience
 
         <br></br>
       </div>
