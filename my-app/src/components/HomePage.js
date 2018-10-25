@@ -1,3 +1,7 @@
+// Page Description: The Home Page for the application
+// Last modified: 25 October 2018
+
+
 import React from 'react';
 import axios from 'axios';
 import jsSha from 'jssha';
