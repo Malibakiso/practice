@@ -26,7 +26,7 @@ import Beneficiary from "./components/Beneficiary";
 import Payments from "./components/Payments";
 // import Transfer from "./components/Transfer";
 import ContactUs from "./components/ContactUs";
-// import Transactions from "./components/Transactions";
+import Transactions from "./components/Transactions";
 import PersonalAcc from "./components/PersonalAcc";
 
 class App extends Component {
@@ -67,7 +67,7 @@ class App extends Component {
  <Route path="/Payments" render={props => <Payments username={this.state.username} password={this.state.password}/>} />
  {/* <Route path="/Transfer" render={props => <Transfer username={this.state.username} password={this.state.password}/>} /> */}
  <Route path="/ContactUs" render={props => <ContactUs username={this.state.username} password={this.state.password}/>} />
- {/* <Route path="/Transactions" render={props => <Transactions username={this.state.username} password={this.state.password}/>} /> */}
+ <Route path="/Transactions" render={props => <Transactions username={this.state.username} password={this.state.password}/>} />
  <Route path="/PersonalAcc" render={props => <PersonalAcc username={this.state.username} password={this.state.password}/>} />
 
  <Route component={Error} />
