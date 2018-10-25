@@ -1,7 +1,7 @@
 // Page Description: The Home Page for the application
 // Last modified: 25 October 2018
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-
+import { NavLink } from 'react-router-dom';
 
 import React from 'react';
 import axios from 'axios';

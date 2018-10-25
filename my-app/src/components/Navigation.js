@@ -33,13 +33,13 @@ class Navigation extends Component {
  <nav>
  <ul >
  <li>
- <NavLink className="navThing" to="/" >Home</NavLink>
+ <NavLink className="navThing" to="/HomePage" >Home</NavLink>
  </li>
  <li>
  <NavLink className="navThing" to="/ContactUs">Contact Us</NavLink>
  </li>
  <li>
- <NavLink className="navThing" to="./LoginPage" >Login</NavLink>
+ <NavLink className="navThing" to="/LoginPage" >Login</NavLink>
  </li>
 
 
