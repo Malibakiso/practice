@@ -3,9 +3,9 @@ import {Container} from 'reactstrap';
 // import {Carousel } from 'react-bootstrap';
 // import {CarouselItem } from 'react-bootstrap';
 // import {CarouselCaption } from 'react-bootstrap';
-import ReactBootstrapCarousel from "react-bootstrap-carousel";
-import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
-import RBCarousel from "react-bootstrap-carousel";
+// import ReactBootstrapCarousel from "react-bootstrap-carousel";
+// import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
+// // import RBCarousel from "react-bootstrap-carousel";
 
 const About = () => (
 

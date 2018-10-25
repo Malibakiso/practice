@@ -11,7 +11,8 @@ const Transfers = () => (
 
     <div>
        <div class= "container-t">
-       <Link to={`/InterAccount`}>Inter-Account Transfers..</Link> // links for different types of transfers
+       <Link to={`/InterAccount`}>Inter-Account Transfers..</Link>
+       {/* // links for different types of transfers */}
        <Link to={`/Transfers`}>Fund a Transfer Now..</Link>
        <Link to={`/Transfers1`}>Fund a Transfer on a certain Date..</Link>
        <Link to={`/Transfers2`}>Fund a Transfer more than once..</Link>
@@ -62,7 +63,8 @@ const Transfers = () => (
                           <Button>Submit & Transfer</Button>
                              <br/>
                         <br/>
-                             <Button>Abort Mission..</Button> //this type of button for better options for User Interface
+                             <Button>Abort Mission..</Button>
+                             {/* //this type of button for better options for User Interface */}
                     </Container>
           </div>
     );

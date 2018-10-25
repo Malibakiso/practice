@@ -7,8 +7,7 @@ import axios from 'axios';
 import jsSha from 'jssha';
 import ReactTable from "react-table";
 import 'react-table/react-table.css';
-import {Container} from 'reactstrap';
-
+import {Container} from 'reactstrap';>
 export default class HomePage extends React.Component {
   constructor(props){
     super(props);
