@@ -11,7 +11,8 @@ import {CarouselCaption } from 'react-bootstrap';
 const Payments = () => (
   <div>
     <div class= "container-p">
-      <Link to={`/Beneficiary`}>Register a Beneficiary</Link> //links to the beneficiary sections
+      <Link to={`/Beneficiary`}>Register a Beneficiary</Link>
+      {/* links to the beneficiary sections */}
       <Link to={`/Beneficiary1`}>Pay a Beneficiary</Link>
       <Link to={`/Beneficiary2`}>Remove a Beneficiary</Link>
 </div>

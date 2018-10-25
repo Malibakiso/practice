@@ -8,7 +8,7 @@ import { Button, Container, Form, FormGroup, Label, Input } from 'reactstrap';
 import { ControlLabel, FormControl } from 'react-bootstrap';
 
 const Beneficiary2 = () => (
-  <div>
+  <div class= "Container-rm">
   <Container>
     <Form>
     <h1>REMOVE AN EXISTING BENEFICIARY</h1>
