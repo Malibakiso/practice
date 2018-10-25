@@ -208,3 +208,8 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
   background: #fff;
   margin: 0 3px;
   }
+  .Container-pc{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+  }
