@@ -16,13 +16,13 @@ const About = () => (
 <div>
 <Container>
   <div class ="container" className="text-center">
-    <h1>About Us & The Team</h1>
+    <h1>About Us</h1>
     <section className="about" id="about" className="text-center">
       <div className="container-about" className="text-center">
         <div className="container" className="text-center">
           <div className="Col sm={3} md={1} ">
-            <h3 className="text-center">The Bank of the Sun</h3>
-            <p style={{fontSize:'15px', textAlign:'center'}}>Access the true meaning of efficiency with The Bank of the Sun with our simplified complexity!<br />
+            {/* <h3 className="text-center">The Bank of the Sun</h3> */}
+            <p style={{fontSize:'15px', textAlign:'justify',margin:'30px'}}>Access the true meaning of efficiency with The Bank of the Sun with our simplified complexity!<br />
             We create and deliver innovative advisory, funding, trading, corporate banking and principal investing
             solutions for our clients. We are innovative thinkers who turn challenges into opportunities.</p>
            </div>
@@ -37,13 +37,13 @@ const About = () => (
 
 <Container>
   <div class="container" className="text-center">
-    <h2 style={{fontSize:'15px', textAlign:'center'}}>Meet the Team</h2>
+    <h2 style={{fontSize:'25px', textAlign:'center',color:'black'}}>Meet the Team</h2>
   <section class="section-padding darker-bg" className="text-center">
       <div class="row" className="text-center">
         <div className="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8">
           <div class="intro-title" className="text-center">
             <div className="hidden-xs">
-              <p style={{fontSize:'15px', textAlign:'center'}}>The Bank of the Sun can confidently say they have established this Bank with the Top Young Web Developers in the Country.</p><br/><br/>
+              {/* <p style={{fontSize:'15px', textAlign:'center'}}>The Bank of the Sun can confidently say they have established this Bank with the Top Young Web Developers in the Country.</p> */}
               <br/>
             </div>
           </div>
@@ -85,8 +85,8 @@ const About = () => (
           <div class="single-intro">
             <div class="intro-img intro-bg4"></div>
             <div class="intro-details text-center">
-              <h3>Vincent Ndyafi</h3>
-              <p>The Developer, all relevant components must go through him before execution.</p>
+              <h3>Vincent C Ndyafi</h3>
+              <p>The Developer, all relevant components must go through him before execution.    </p>
 
             </div>
           </div>
