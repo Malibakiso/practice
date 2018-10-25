@@ -36,12 +36,12 @@ const FAQ = () => (
                     *An "approved beneficiary" is a company or institution with which The Bank of the Sun has a special payment agreement for your convenience (e.g. Telkom). When paying an `approved beneficiary', you don't need the beneficiary's banking details.</p>
                   <h6>Can I link new beneficiaries over the telephone whilst speaking to the consultant?</h6>
                   <p style={{fontSize:'15px', textAlign:'center'}} class="solid">Yes. You may instruct the consultant to add any beneficiary to your profile, however you will be required to provide the consultant with the SMS reference number in order to authorise the consultant to proceed with the transaction&nbsp;</p>
-                  <h6>How soon will a payment go through?</h6>
+                  {/* <h6>How soon will a payment go through?</h6>
                   <p style={{fontSize:'15px', textAlign:'center'}} class="solid">When you pay a third-party beneficiary, your payment may not go through immediately. Always allow for a delay, especially when making payments to accounts at banks other than The Bank of the Sun. As a guide: when you make a payment to another bank on Wednesday morning, the funds will be available on Friday.</p>
                   <h6>What is my daily payment/transfer limit?</h6>
                   <p style={{fontSize:'15px', textAlign:'center'}} class="solid">For security reasons you are allocated a daily maximum limit for transfers and payments. This limit can be arranged with The Bank of the Sun Contact Centre or the branch for a value up to R 130&nbsp;000.</p>
                   <h6>How do I increase or decrease my payment/transfer limits</h6>
-                  <p style={{fontSize:'15px', textAlign:'center'}} class="solid">To increase your payment or transfer limits you may call the The Bank of the Sun Contact Centre on 021 2320 564, a consultant will assist to increase or decrease the limits up to a MAX value of R 130&nbsp;000.</p>
+                  <p style={{fontSize:'15px', textAlign:'center'}} class="solid">To increase your payment or transfer limits you may call the The Bank of the Sun Contact Centre on 021 2320 564, a consultant will assist to increase or decrease the limits up to a MAX value of R 130&nbsp;000.</p> */}
                 </div>
                 <div className="clearfix" />
               </div>

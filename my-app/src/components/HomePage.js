@@ -92,7 +92,7 @@ export default class HomePage extends React.Component {
         <h1>Personal Details</h1>
         <h2>Username : {this.state.username}</h2>
         <p style={{fontSize:'15px', textAlign:'center'}}>{this.state.profileDetails}</p>
-        <ReactTable
+        <ReactTable  className="personal-acc-table"
           data={this.state.clients}
           columns={this.state.columns}
         >
