@@ -1,3 +1,7 @@
+// Page Description: Register Form for client
+// Last Modified: 25 October 2018
+
+
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { Form } from 'semantic-ui-react';
