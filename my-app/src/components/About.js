@@ -10,12 +10,13 @@ import RBCarousel from "react-bootstrap-carousel";
 const About = () => (
 
 <div>
+<Container>
   <div class ="container" className="text-center">
-    <h1>About Us</h1>
+    <h1>About Us & The Team</h1>
     <section className="about" id="about" className="text-center">
       <div className="container-about" className="text-center">
         <div className="container" className="text-center">
-          <div className="Col sm={6} md={4} / about-center">
+          <div className="Col sm={3} md={1} ">
             <h3 className="text-center">The Bank of the Sun</h3>
             <p style={{fontSize:'15px', textAlign:'center'}}>Access the true meaning of efficiency with The Bank of the Sun with it's simplified complexity!<br />
             We create and deliver innovative advisory, funding, trading, corporate banking and principal investing
@@ -26,54 +27,71 @@ const About = () => (
       </div>
     </section>
 </div>
+</Container>
+<br/>
+<br/>
 
 <Container>
-  <div id="carouselAboutUs" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-interval="10" data-slide-to="0" class="active"></li>
-      <li data-interval="10" data-slide-to="1"></li>
-      <li data-interval="10" data-slide-to="2"></li>
-      <li data-interval="10" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="./assets/stellies1.jpg" alt="First slide"/>
-        <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
-  </div>
+  <div class="container" className="text-center">
+    <h2 style={{fontSize:'15px', textAlign:'center'}}>Meet the Team</h2>
+  <section class="section-padding darker-bg" className="text-center">
+      <div class="row" className="text-center">
+        <div className="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8">
+          <div class="intro-title" className="text-center">
+            <div className="hidden-xs">
+              <p style={{fontSize:'15px', textAlign:'center'}}>The Bank of the Sun can confidently say they have established this Bank with the Top Young Web Developers in the Country.</p><br/><br/>
+              <br/>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./assets/stellies6.jpg" alt="Second slide"/>
-        <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
-  </div>
+      <div class="row">
+        {/* <!-- single intro --> */}
+        <div class="col-md-3">
+          <div class="single-intro">
+            <div class="intro-img intro-bg1"></div>
+            <div class="intro-details text-center">
+              <h3>Zvikomborero Chitiyo</h3>
+              <p>The master Typer & a soon to be Curator of Web development.</p>
+            </div>
+          </div>
+        </div>
+        {/* <!-- single intro --> */}
+        <div class="col-md-3">
+          <div class="single-intro">
+            <div class="intro-img intro-bg2"></div>
+            <div class="intro-details text-center">
+              <h3>Courtney Terrence Yon</h3>
+              <p>Mr Direction, as he sets the pace and route the Team should take.</p>
+            </div>
+          </div>
+        </div>
+        {/* <!-- single intro --> */}
+        <div class="col-md-3">
+          <div class="single-intro">
+            <div class="intro-img intro-bg3"></div>
+            <div class="intro-details text-center">
+              <h3>Malibakiso Mpeke</h3>
+              <p>The Queen of styling and the refinement leader of all areas for The Bank of the Sun.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="single-intro">
+            <div class="intro-img intro-bg4"></div>
+            <div class="intro-details text-center">
+              <h3>Vincent Ndyafi</h3>
+              <p>The Developer, all relevant components must go through him before execution.</p>
+
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./assets/stellies8.jpg" alt="Third slide"/>
-        <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
+
+  </section>
   </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./assets/stellies7.jpg" alt="Third slide"/>
-        <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
-  </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+  {/* <!-- intro area end --> */}
 </Container>
 </div>
 );
