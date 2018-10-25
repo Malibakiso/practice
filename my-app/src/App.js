@@ -22,9 +22,9 @@ import Beneficiary from "./components/Beneficiary";
 // import Electricity from "./components/Electricity";
 // import AirtimeAndBundles from "./components/AirtimeAndBundles";
 // import Credit from "./components/Credit";
-// import Loan from "./components/Loan";
+import About from "./components/About";
 import Payments from "./components/Payments";
-// import Transfer from "./components/Transfer";
+import Buy from "./components/Buy";
 import ContactUs from "./components/ContactUs";
 import Transactions from "./components/Transactions";
 import PersonalAcc from "./components/PersonalAcc";
@@ -62,10 +62,10 @@ class App extends Component {
  {/* <Route path="/Utility" render={props => <Utility username={this.state.username} password={this.state.password}/>} />
  <Route path="/Electricity" render={props => <Electricity username={this.state.username} password={this.state.password}/>} />
  <Route path="/AirtimeAndBundles" render={props => <AirtimeAndBundles username={this.state.username} password={this.state.password}/>} />
- <Route path="/Credit" render={props => <Credit username={this.state.username} password={this.state.password}/>} />
- <Route path="/Loan" render={props => <Loan username={this.state.username} password={this.state.password}/>} /> */}
+ <Route path="/Credit" render={props => <Credit username={this.state.username} password={this.state.password}/>} /> */}
+ <Route path="/About" render={props => <About username={this.state.username} password={this.state.password}/>} />
  <Route path="/Payments" render={props => <Payments username={this.state.username} password={this.state.password}/>} />
- {/* <Route path="/Transfer" render={props => <Transfer username={this.state.username} password={this.state.password}/>} /> */}
+ <Route path="/Buy" render={props => <Buy username={this.state.username} password={this.state.password}/>} />
  <Route path="/ContactUs" render={props => <ContactUs username={this.state.username} password={this.state.password}/>} />
  <Route path="/Transactions" render={props => <Transactions username={this.state.username} password={this.state.password}/>} />
  <Route path="/PersonalAcc" render={props => <PersonalAcc username={this.state.username} password={this.state.password}/>} />
