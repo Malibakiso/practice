@@ -1,3 +1,7 @@
+// Page Description:  When a error occurs or in correct information is added, this page appears
+// Last Modified: 25 October 2018
+
+
 import React from 'react';
 import {Link} from 'react-router-dom';
 import ReactDOM from "react-dom";
@@ -13,7 +17,7 @@ const Error = () => (
             </div>
             <div className="page-agile">
               <h2>404</h2>
-              <span>seem like this page doesn't exist you can search instead </span>
+              <span>seem like the page does not exist you can search instead </span>
               <div className="form-agile">
                 <form action="#" method="get">
                   <input type="text" name="uname" placeholder="search" required />
