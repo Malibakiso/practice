@@ -51,12 +51,12 @@ export default class Buy extends React.Component {
   render() {
     return (
 
-      <div class= "container-buy">
-        <h1>You can buy prepaid or utility services</h1>
+      <div class= "container-buy" className="text-center">
+        <h1>Prepaid or Utility Services</h1>
         <br></br>
         <Container>
           <section>
-          <h5>Prepaid and utility options</h5>
+          <h5>Bank of the Sun clients have the ability to purchase airtime, data bundles and electricity without worrying about the stress of leaving their homes.</h5>
           </section>
           <Row>
             <Col>

@@ -6,10 +6,10 @@ import { Button, Container, Form, FormGroup, Label, Input, InputGroup, FormText,
 const Prepaid = () => (
 
       <div>
-        <h1>PREPAID AND UTILTIY OPTIONS</h1>
+        <h1 className="text-center">PREPAID AND UTILTIY OPTIONS</h1>
 
         <h3>Airtime</h3>
-<Container>
+<Container className="text-center">
         <Form>
         <FormGroup>
           <Label for="network">Network Provider</Label>

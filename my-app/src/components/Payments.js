@@ -7,15 +7,14 @@ import {CarouselCaption } from 'react-bootstrap';
 
 const Payments = () => (
   <div>
-    <div>
+    <div class= "container-p">
       <Link to={`/Beneficiary`}>Register a Beneficiary</Link>
       <Link to={`/Beneficiary1`}>Pay a Beneficiary</Link>
       <Link to={`/Beneficiary2`}>Remove a Beneficiary</Link>
-
-    </div>
+</div>
+  <Container>
     <h1>PAYMENTS</h1>
-    <Container>
-      <Carousel>
+   <Carousel>
       <Carousel.Item>
         <img width={500} height={100} alt="500x100" src="/carousel.png" />
         <Carousel.Caption>
