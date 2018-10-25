@@ -77,7 +77,7 @@ class Login extends Component {
               </table>
 
               <br/><br/>
-              <NavLink className="btn btn-primary btn-xl js-scroll-trigger" onClick={e=>this.loginFunction()} to="HomePage" >Login</NavLink>
+              <NavLink className="btn btn-primary btn-xl js-scroll-trigger" onClick={e=>this.loginFunction()} to="Payments" >Login</NavLink>
               <NavLink className="btn btn-primary btn-xl js-scroll-trigger" to="Register" >Register</NavLink>
 
               </div>
