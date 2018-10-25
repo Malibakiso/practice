@@ -1,5 +1,5 @@
 // Description: This page allows the user to buy certain
-// Last modified: 25 October 2018 
+// Last modified: 25 October 2018
 
 
 import React from 'react';
@@ -56,11 +56,12 @@ export default class Buy extends React.Component {
     return (
 
       <div class= "container-buy" className="text-center">
+        <h5>Bank of the Sun clients have the ability to purchase airtime, data bundles and electricity without worrying about the stress of leaving their homes.</h5>
+
         <h1>Prepaid or Utility Services</h1>
         <br></br>
         <Container>
           <section>
-          <h5>Bank of the Sun clients have the ability to purchase airtime, data bundles and electricity without worrying about the stress of leaving their homes.</h5>
           </section>
           <Row>
             <Col>
@@ -118,7 +119,8 @@ export default class Buy extends React.Component {
                     <option>City of Johannesburg Metropolitan Municipality</option>
                     <option>Mangaung Metropolitan Municipality</option>
                     <option>Nelson Mandela Bay Metropolitan Municipality</option>
-                    <option>City of Tshwane Metropolitan Municipality</option> // the inputs via options tag.
+                    <option>City of Tshwane Metropolitan Municipality</option>
+                     {/* the inputs via options tag. */}
                   </Input>
                 </FormGroup>
                 <InputGroup>
@@ -127,7 +129,8 @@ export default class Buy extends React.Component {
                   <InputGroupAddon addonType="append">.00</InputGroupAddon>
                 </InputGroup>
                 <br/>
-                <Button onClick = {e => this.onSubmit('Electricity')}>Buy Electricity</Button> //buying of electricity
+                <Button onClick = {e => this.onSubmit('Electricity')}>Buy Electricity</Button>
+                {/* buying of electricity */}
               </Form>
             </Col>
           </Row>
