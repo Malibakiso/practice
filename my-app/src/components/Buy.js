@@ -1,3 +1,7 @@
+// Description: This page allows the user to buy certain
+// Last modified: 25 October 2018 
+
+
 import React from 'react';
 import axios from 'axios';
 import jsSha from 'jssha';
@@ -114,7 +118,7 @@ export default class Buy extends React.Component {
                     <option>City of Johannesburg Metropolitan Municipality</option>
                     <option>Mangaung Metropolitan Municipality</option>
                     <option>Nelson Mandela Bay Metropolitan Municipality</option>
-                    <option>City of Tshwane Metropolitan Municipality</option>
+                    <option>City of Tshwane Metropolitan Municipality</option> // the inputs via options tag.
                   </Input>
                 </FormGroup>
                 <InputGroup>
@@ -123,7 +127,7 @@ export default class Buy extends React.Component {
                   <InputGroupAddon addonType="append">.00</InputGroupAddon>
                 </InputGroup>
                 <br/>
-                <Button onClick = {e => this.onSubmit('Electricity')}>Buy Electricity</Button>
+                <Button onClick = {e => this.onSubmit('Electricity')}>Buy Electricity</Button> //buying of electricity
               </Form>
             </Col>
           </Row>
