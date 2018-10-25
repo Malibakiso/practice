@@ -16,11 +16,13 @@ const Beneficiary2 = () => (
       <Form inline>
       <FormGroup controlId="formInlineName">
         <ControlLabel>Name:</ControlLabel>{' '}
-        <FormControl type="text" placeholder="Beneficiary Name" /> //form control for the name of the benneficiary
+        <FormControl type="text" placeholder="Beneficiary Name" />
+        {/* form control for the name of the benneficiary */}
       </FormGroup>{' '}
       <FormGroup controlId="formInlineEmail">
         <ControlLabel>Username:</ControlLabel>{' '}
-        <FormControl type="email" placeholder="Beneficiary Username" /> //username which needs to be added as information in order to work and post properly
+        <FormControl type="email" placeholder="Beneficiary Username" />
+        {/* username which needs to be added as information in order to work and post properly */}
       </FormGroup>{' '}
       <Button type="submit">Remove as Beneficiary</Button>
       </Form>
@@ -33,18 +35,82 @@ const Beneficiary2 = () => (
        <Container>
          <Form>
        <Form inline>
-       <FormGroup controlId="formInlineName"> //inline name
+       <FormGroup controlId="formInlineName">
+         {/* inline name */}
          <ControlLabel>Name:</ControlLabel>{' '}
          <FormControl type="text" placeholder="Beneficiary Name" />
        </FormGroup>{' '}
-       <FormGroup controlId="formInlineEmail"> //email form
+       <FormGroup controlId="formInlineEmail">
+         {/* email form */}
          <ControlLabel>Username:</ControlLabel>{' '}
          <FormControl type="email" placeholder="Beneficiary Username" />
        </FormGroup>{' '}
-       <Button type="submit">Remove as Beneficiary</Button> //this submit button will allow for the removal of information
+       <Button type="submit">Remove as Beneficiary</Button>
+       {/* this submit button will allow for the removal of information */}
        </Form>
          </Form>
         </Container>
+        <br/>
+        <br/>
+        <Container>
+          <Form>
+        <Form inline>
+        <FormGroup controlId="formInlineName">
+          {/* inline name */}
+          <ControlLabel>Name:</ControlLabel>{' '}
+          <FormControl type="text" placeholder="Beneficiary Name" />
+        </FormGroup>{' '}
+        <FormGroup controlId="formInlineEmail">
+          {/* email form */}
+          <ControlLabel>Username:</ControlLabel>{' '}
+          <FormControl type="email" placeholder="Beneficiary Username" />
+        </FormGroup>{' '}
+        <Button type="submit">Remove as Beneficiary</Button>
+        {/* this submit button will allow for the removal of information */}
+        </Form>
+          </Form>
+         </Container>
+         <br/>
+         <br/>
+         <Container>
+           <Form>
+         <Form inline>
+         <FormGroup controlId="formInlineName">
+           {/* inline name */}
+           <ControlLabel>Name:</ControlLabel>{' '}
+           <FormControl type="text" placeholder="Beneficiary Name" />
+         </FormGroup>{' '}
+         <FormGroup controlId="formInlineEmail">
+           {/* email form */}
+           <ControlLabel>Username:</ControlLabel>{' '}
+           <FormControl type="email" placeholder="Beneficiary Username" />
+         </FormGroup>{' '}
+         <Button type="submit">Remove as Beneficiary</Button>
+         {/* this submit button will allow for the removal of information */}
+         </Form>
+           </Form>
+          </Container>
+
+          <br/>
+          <br/>
+          <Container>
+            <Form>
+          <Form inline>
+          <FormGroup controlId="formInlineName">
+            {/* inline name */}
+            <ControlLabel>Name:</ControlLabel>{' '}
+            <FormControl type="text" placeholder="Beneficiary Name" />
+          </FormGroup>{' '}
+          <FormGroup controlId="formInlineEmail">
+            {/* email form */}
+            <ControlLabel>Username:</ControlLabel>{' '}
+            <FormControl type="email" placeholder="Beneficiary Username" />
+          </FormGroup>{' '}
+          <Button type="submit">Remove as Beneficiary</Button>
+          {/* this submit button will allow for the removal of information */}
+          </Form>
+            </Form>
+           </Container>
         </div>
 );
 

@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 import { Button, Container, Form, FormGroup, Label, Input } from 'reactstrap';
 
 const Beneficiary1 = () => (
-  <div>
+  <div className= "container-newb">
     <Container>
     <h1>PAY A NEW BENEFICIARY</h1>
 
@@ -28,7 +28,7 @@ const Beneficiary1 = () => (
     <FormGroup>
       <Label for="bank">Beneficiary Bank</Label>
       <Input type="select" name="select" id="exampleSelect">
-        <option>The Bank of the Sun</option> //bank  options for beneficiary
+        <option>The Bank of the Sun</option>
         <option>Standard Bank</option>
         <option>FNB</option>
         <option>ABSA</option>
@@ -64,10 +64,10 @@ const Beneficiary1 = () => (
       </Input>
     </FormGroup>
 
-    <Button>Pay Beneficiary</Button>
+    <Button href = "HomePage">Submit</Button>
     <br/>
     <br/>
-    <Button>Abort Mission..</Button> //Abort button
+    <Button href = "Payments">Cancel</Button>
   </Form>
  </Container>
   </div>

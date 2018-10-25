@@ -22,8 +22,8 @@ const About = () => (
         <div className="container" className="text-center">
           <div className="Col sm={3} md={1} ">
             {/* <h3 className="text-center">The Bank of the Sun</h3> */}
-            <p style={{fontSize:'15px', textAlign:'justify',margin:'30px'}}>Access the true meaning of efficiency with The Bank of the Sun with our simplified complexity!<br />
-            We create and deliver innovative advisory, funding, trading, corporate banking and principal investing
+            <p style={{fontSize:'15px', textAlign:'center',margin:'30px',margin:'10px'}}>Access the true meaning of efficiency with The Bank of the Sun with our simplified complexity!<br />
+            <p>We create and deliver innovative advisory, funding, trading, corporate banking and principal investing</p>
             solutions for our clients. We are innovative thinkers who turn challenges into opportunities.</p>
            </div>
           <div className="clearfix"></div>

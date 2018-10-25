@@ -8,7 +8,7 @@ import { Button, Container, Form, FormGroup, Label, Input } from 'reactstrap';
 const Beneficiary = () => (
   <div>
     <h1>REGISTER A NEW BENEFICIARY</h1>
-
+<div className = "Container-RB">
 <Container>
     <Form>
     <FormGroup>
@@ -72,13 +72,14 @@ const Beneficiary = () => (
         <option>Savings Account</option>
       </Input>
     </FormGroup>
-    <Button>Add Beneficiary</Button>
+    <Button href = "Beneficiary1">Submit </Button>
     <br/>
     <br/>
-    <Button>Abort Mission..</Button>
+    <Button href = "Payments">Cancel </Button>
   </Form>
  </Container>
   </div>
+</div>
 );
 
 export default Beneficiary;
