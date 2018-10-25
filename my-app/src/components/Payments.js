@@ -1,108 +1,97 @@
-// Description: The payments section allows fo the registering, paying and removing of beneficiaries
-// Last modified:
-
-import React from 'react';
-import {Link} from 'react-router-dom';
-import {Container} from 'reactstrap';
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import axios from 'axios';
-import jsSha from 'jssha';
-// import {Carousel } from 'react-bootstrap';
-// import {CarouselItem } from 'react-bootstrap';
-// import {CarouselCaption } from 'react-bootstrap';
-import ReactTable from "react-table";
-import 'react-table/react-table.css';
+import jsSHA from 'jssha';
+
+class Payments extends Component {
+
+ //set the states and bind the functions
+ constructor() {
+ super()
+ this.state = {
+ accounts:[],
+ transactions: [],
+ };
+ }
+
+ //authenticate user and pull the transaction data
+ componentDidMount() {
+ const user = this.props.username;
+ const password = this.props.password;
+ const hmac = new jsSHA('SHA-256', 'TEXT');
+ hmac.setHMACKey(password, 'TEXT');
+ hmac.update(user);
+ hmac.update(Date.now().toString(36).substring(0, 4));
+ const token = `${hmac.getHMAC('HEX')}%${user}`;
+ const api = axios.create({
+ baseURL: 'http://45.77.58.134:8080',
+ headers: { 'Authorization': 'Bearer ' + token }
+ });
+
+ (async () => {
+ const res = await api.get('/clients');
+ const accounts = await api.get(`/accounts/${res.data[0]._id}`)
+ const transactions = await api.get(`/transactions/${accounts.data[0]._id}/.*`)
+ this.setState({
+ accounts: accounts.data,
+ transactions: transactions.data});
+ console.log(accounts);
+ console.log(transactions);
+ })();
+ };
 
 
-// const Payments = () => (
-//   <div>
-//     <div class= "container-p">
-//       <Link to={`/Beneficiary`}>Register a Beneficiary</Link> //links to the beneficiary sections
-//       <Link to={`/Beneficiary1`}>Pay a Beneficiary</Link>
-//       <Link to={`/Beneficiary2`}>Remove a Beneficiary</Link>
-// </div>
-//   <Container>
-//     <h1>PAYMENTS</h1>
-//     </Container>
-//   </div>
-// );
-//
-// export default Payments;
-export default class payments extends React.Component {
+render(){
+ return (
+ <body className="bodystyle">
+ <div className="container text-center my-auto">
+ <br />
+ <div className="boxAccountspecific">
+ <br></br>
+ <h2 className="mb-1">Statements</h2>
+ <br/>
+ <div id="Personal" className="tabcontent">
+ <table className="C">
+ <thead>
+ <th className="C" >Time</th>
+ <th className="C" >Type</th>
+ <th className="C" >Source</th>
+ <th className="C" >Destination</th>
+ <th className="C" >Amount</th>
+ <th className="C" >Reference</th>
+ </thead>
+ <tbody>
+ {this.state.transactions.map(x =>
+ <tr key = {x._id}>
+ <td className="C" >{new Intl.DateTimeFormat('en-GB', {
+ year: 'numeric',
+ month: 'long',
+ day:'2-digit',
+ hour:'2-digit',
+ minute: '2-digit',
+ second: '2-digit'
+ }).format(x.time)}
+ </td>
+ <td className="C" >{x.type}</td>
+ <td className="C" >{x.src}</td>
+ <td className="C" >{x.dest}</td>
+ <td className="C" >{x.amount}</td>
+ <td className="C" >{x.ref}</td>
+ </tr>
+ )}
+ </tbody>
+ </table>
 
-  constructor(props){
-    super(props);
-    this.state = {
-      username: "redfrog136",
-      // this.state.username,
-      password:"lalakers",
-      // this.state.password,
-      columns: [
-        {
-          Header: 'Type',
-          accessor: 'type'
-        },
-        {
-          Header: 'Amount',
-          accessor: 'amount',
+ <br></br>
+ <div id='accountButtons'>
+ <NavLink className="btn btn-primary btn-xl js-scroll-trigger" to="ViewAccount">Back</NavLink> <br/><br/>
+ </div>
+ </div>
+ </div>
+ </div>
+ </body>
+ );
+};
+};
 
-        },
-        {
-          Header: 'Current Balance',
-          accessor: 'balance',
-        },
-      ],
-      transactions: [],
-      accountName: [],
-    }
-  }
-
-  componentDidMount(){
-    const hmac = new jsSha('SHA-256','TEXT');
-    hmac.setHMACKey(this.state.password, 'TEXT');
-    hmac.update(this.state.username);
-    hmac.update(Date.now().toString(36).substring(0, 4));
-
-    const token = `${hmac.getHMAC('HEX')}%${this.state.username}`;
-    const api = axios.create({
-      baseURL: 'http://45.77.58.134:8080',
-      headers: { 'Authorization': 'Bearer ' + token }
-    });
-
-
-    (async () => {
-      const res = await api.get('/clients');
-      const accounts = await api.get(`/accounts/${res.data[0]._id}`)
-      const transactions = await api.get(`/transactions/${accounts.data[1]._id}/.*`)
-      // console.log(res);
-      // console.log(transactions.data);
-      console.log(accounts);
-      this.setState({transactions: transactions.data, accountName: accounts.data[1].description})
-    })();
-  }
-
-  render() {
-    return(
-      <div className="Container-pc">
-        <h1>Make Payments</h1>
-        <h2> Hi,{this.state.username}</h2>
-        <p>{this.state.accountName}</p>
-         <ReactTable
-          className="personal-acc-table"
-          data={this.state.transactions}
-          columns={this.state.columns}
-        >
-        </ReactTable>
-      </div>
-
-
-
-
-
-
-
-
-
-
-    )
-  }
-}
+export default Payments;
