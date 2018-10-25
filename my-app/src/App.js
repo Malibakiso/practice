@@ -24,6 +24,7 @@ import AccountMan from './components/AccountMan';
 import ContactUs from './components/ContactUs';
 import FAQ from './components/FAQ';
 
+
 class App extends React.Component{
 
   constructor(props){
@@ -63,6 +64,8 @@ class App extends React.Component{
           <Route path="/ScheduledPayments" exact component={ScheduledPayments}/>
           <Route path="/ContactUs" exact component={ContactUs}/>
           <Route path="/FAQ" exact component={FAQ}/>
+
+
           {/* <Route component = {Error} /> */}
         </div>
       </BrowserRouter>
