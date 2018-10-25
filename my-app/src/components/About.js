@@ -1,11 +1,15 @@
+// Description: The About Page for the application which includes extra information
+// Last modified: 25 October 2018
+
+
 import React from 'react';
 import {Container} from 'reactstrap';
 // import {Carousel } from 'react-bootstrap';
 // import {CarouselItem } from 'react-bootstrap';
 // import {CarouselCaption } from 'react-bootstrap';
-import ReactBootstrapCarousel from "react-bootstrap-carousel";
-import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
-import RBCarousel from "react-bootstrap-carousel";
+// import ReactBootstrapCarousel from "react-bootstrap-carousel";
+// import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
+// // import RBCarousel from "react-bootstrap-carousel";
 
 const About = () => (
 
@@ -18,7 +22,7 @@ const About = () => (
         <div className="container" className="text-center">
           <div className="Col sm={3} md={1} ">
             <h3 className="text-center">The Bank of the Sun</h3>
-            <p style={{fontSize:'15px', textAlign:'center'}}>Access the true meaning of efficiency with The Bank of the Sun with it's simplified complexity!<br />
+            <p style={{fontSize:'15px', textAlign:'center'}}>Access the true meaning of efficiency with The Bank of the Sun with our simplified complexity!<br />
             We create and deliver innovative advisory, funding, trading, corporate banking and principal investing
             solutions for our clients. We are innovative thinkers who turn challenges into opportunities.</p>
            </div>

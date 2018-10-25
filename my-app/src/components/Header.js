@@ -1,3 +1,7 @@
+// Page Description: The Header Page for the application
+// Last modified: 25 October 2018
+
+
 import React from 'react';
 import {Link} from 'react-router-dom';
 
