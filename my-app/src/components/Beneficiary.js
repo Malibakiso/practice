@@ -1,3 +1,6 @@
+// Page Description: This is the beneficiary page for the application
+// Last modified: 25 October 2018
+
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { Button, Container, Form, FormGroup, Label, Input } from 'reactstrap';
@@ -21,7 +24,7 @@ const Beneficiary = () => (
       <Input type="text" name="text" id="text" placeholder="Name of Beneficiary" />
     </FormGroup>
     <FormGroup>
-      <Label for="bank">Beneficiary's Bank</Label>
+      <Label for="bank">Beneficiary  Bank</Label>
       <Input type="select" name="select" id="exampleSelect">
         <option>The Bank of the Sun</option>
         <option>Standard Bank</option>
@@ -58,7 +61,7 @@ const Beneficiary = () => (
       </FormGroup> */}
     </FormGroup>
     <FormGroup>
-      <Label for="text">Beneficiary's Account Number</Label>
+      <Label for="text">Beneficiary Account Number</Label>
       <Input type="tel" name="accNum" id="accNum" maxlength="13" placeholder="000-00000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
     </FormGroup>
     <FormGroup>
