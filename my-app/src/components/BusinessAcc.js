@@ -62,11 +62,11 @@ export default class BusinessAcc extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className="Container-pc">
         <h1>BUSINESS ACCOUNT</h1>
         <h2>{this.state.username}</h2>
         <p style={{fontSize:'15px', textAlign:'center'}}>{this.state.accountName}</p>
-        <ReactTable
+        <ReactTable className="personal-acc-table"
           data={this.state.transactions}
           columns={this.state.columns}
         >
