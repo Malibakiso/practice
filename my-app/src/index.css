@@ -266,24 +266,16 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 }
 
 .intro-bg1{
-	background: url("/assets/sunmain.png") no-repeat;
-  background-size: initial;
-  padding: auto;
+	background: url("./assets/Zviko.png") no-repeat;
 }
 .intro-bg2{
-  background: url("/assets/sunmain.png") no-repeat;
-  background-size: 100px 300px;
-  padding: auto;
+	background: url("./assets/Courtney.jpg") no-repeat;
 }
 .intro-bg3{
-  background: url("/assets/sunmain.png") no-repeat;
-  background-size: 100px 300px;
-  padding: auto;
+	background: url("./assets/Max.jpg") no-repeat;
 }
 .intro-bg4{
-  background: url("/assets/sunmain.png") no-repeat;
-  background-size: 100px 300px;
-  padding: auto;
+	background: url("./assets/Vince.jpg") no-repeat;
 }
 
 .intro-title p{
