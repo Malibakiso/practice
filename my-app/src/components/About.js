@@ -92,14 +92,6 @@ const About = () => (
           </div>
         </div>
       </div>
-      <footer>
-
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-
-
-
-      </footer>
 
   </section>
   </div>
