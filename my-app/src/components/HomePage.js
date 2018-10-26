@@ -13,8 +13,8 @@ export default class HomePage extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      username:"",
-      password:"",
+      username:"blacktiger144",
+      password:"191919",
       columns: [
         {
           Header: 'Username',

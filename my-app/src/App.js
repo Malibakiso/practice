@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-// import "./css/stylish-portfolio.min.css";
-// import "./vendor/bootstrap/css/bootstrap.min.css";
-// import "./vendor/fontawesome-free/css/all.min.css";
-// import "./vendor/simple-line-icons/css/simple-line-icons.css";
-
 import HomePage from "./components/HomePage";
 import LoginPage from "./components/LoginPage";
 import RegisterForm from "./components/RegisterForm";
@@ -22,22 +17,6 @@ import PersonalAcc from "./components/PersonalAcc";
 import BusinessAcc from "./components/BusinessAcc";
 import AccountMan from "./components/AccountMan";
 import FAQ from "./components/FAQ";
-
-
-// import ViewAccount from "./components/ViewAccount";
-//  import CreateAccount from "./components/CreateAccount";
-//  import CreateAccountSavings from "./components/CreateAccountSavings";
-// import CreateAccountCredit from "./components/CreateAccountCredit";
-//  import CreateAccountSpecialInvestments from "./components/CreateAccountSpecialInvestments";
-//  import Invest from "./components/Invest";
-// import Error from "./components/Error";
-//
-// import Utility from "./components/Utility";
-//  import Electricity from "./components/Electricity";
-//  import AirtimeAndBundles from "./components/AirtimeAndBundles";
-//  import Credit from "./components/Credit";
-
-
 
 class App extends Component {
 
@@ -75,21 +54,6 @@ class App extends Component {
   <Route path="/AccountMan" render={props => <AccountMan username={this.state.username} password={this.state.password}/>} />
   <Route path="/FAQ" render={props => <FAQ username={this.state.username} password={this.state.password}/>} />
 
- {/*  <Route path="/ViewAccount" render={props => <ViewAccount username={this.state.username} password={this.state.password}/>} />
- // // <Route path="/CreateAccount" render={props => <CreateAccount username={this.state.username} password={this.state.password}/>} />
- // // <Route path="/CreateAccountSavings" render={props => <CreateAccountSavings username={this.state.username} password={this.state.password}/>} />
- // // <Route path="/CreateAccountCredit" render={props => <CreateAccountCredit username={this.state.username} password={this.state.password}/>} />
- // // <Route path="/CreateAccountSpecialInvestments" render={props => <CreateAccountSpecialInvestments username={this.state.username} password={this.state.password}/>} />
- // // <Route path="/Invest" render={props => <Invest username={this.state.username} password={this.state.password}/>} />
- //
- //  <Route path="/Utility" render={props => <Utility username={this.state.username} password={this.state.password}/>} />
- // <Route path="/Electricity" render={props => <Electricity username={this.state.username} password={this.state.password}/>} />
- // <Route path="/AirtimeAndBundles" render={props => <AirtimeAndBundles username={this.state.username} password={this.state.password}/>} />
- // <Route path="/Credit" render={props => <Credit username={this.state.username} password={this.state.password}/>} /> */}
- //
-
-
- {/* <Route component={Error} /> */}
 
  </Switch>
  </div>
