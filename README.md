@@ -15,6 +15,9 @@ Control Alt Elite took the philosophy and motto of "Simplifying complexity", thi
 # Documents
 Please see user file. it contains the index.html file (website) with user documentation linked to it. 
 
+# Issues
+The group tried to get the pulls from personal accounts sorted. However, due to time constraints and "one step forward and two steps backwards" events we failed to produce proper handling of the API. Please see personal account 
+
 ## About
 
 This project is the group assessment for Socio Informatics/Information Systems Management 354. Groups consisted of 4/5 members and was tasked with implementation including use of HTML, CSS, JavaScript and Bootstrap. 
