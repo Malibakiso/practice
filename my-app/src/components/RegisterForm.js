@@ -31,6 +31,7 @@ class RegisterForm extends React.Component{
   // },
   render (){
     return(
+      <div className="container-reg">
       <Form>
 
    <Form.Field>
@@ -90,6 +91,7 @@ class RegisterForm extends React.Component{
  <Link to="/LoginPage">SUBMIT</Link>
 
       </Form>
+    </div>
     );
   }
 };

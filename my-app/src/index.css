@@ -342,3 +342,20 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
   color:green;
   /* background-color: #c0c0c0; */
 }
+.form{
+	margin-bottom:  30px;
+}
+/* .faq{
+	margin-right: auto;
+  background-color: #fff;
+} */
+.container-imag{
+  margin-right: auto;
+}
+.col{
+  margin-right:center;
+}
+.faq2{
+	margin-right: auto;
+  background-color: #fff;
+}
