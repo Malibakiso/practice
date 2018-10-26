@@ -75,56 +75,56 @@ export default class PersonalAcc extends React.Component {
   render() {
     return(
       <body className="bodystyle">
-      <div className="container text-center my-auto">
-      <br />
+            <div className="container text-center my-auto">
+               <br />
       <div className="boxAccountspecific">
-      <br></br>
+               <br></br>
       <h2 className="mb-1">Personal Account</h2>
-      <br/>
+              <br/>
       <div id="Personal" className="tabcontent">
-      <table className="C">
+             <table className="C">
       <thead>
-      <th className="C" >Client_ID</th>
-      <th className="C" >Type</th>
-      <th className="C" >Description</th>
-      <th className="C" >Client</th>
-      <th className="C" >Balance</th>
+             <th className="C" >Client_ID</th>
+             <th className="C" >Type</th>
+             <th className="C" >Description</th>
+             <th className="C" >Client</th>
+             <th className="C" >Balance</th>
 
       </thead>
       <tbody>
       {this.state.accounts.map(x =>
-      <tr key = {x._id}>
+            <tr key = {x._id}>
       <td className="C" >{new Intl.DateTimeFormat('en-GB', {
-      year: 'numeric',
-      month: 'long',
-      day:'2-digit',
-      hour:'2-digit',
-      minute: '2-digit',
-      second: '2-digit'
+             year: 'numeric',
+             month: 'long',
+             day:'2-digit',
+             hour:'2-digit',
+             minute: '2-digit',
+             second: '2-digit'
       }).format(x.time)}
       </td>
-      <td className="C" >{x._id}</td>
-      <td className="C" >{x.type}</td>
-      <td className="C" >{x.description}</td>
-      <td className="C" >{x.client}</td>
-      <td className="C" >{x.balance}</td>
+          <td className="C" >{x._id}</td>
+          <td className="C" >{x.type}</td>
+          <td className="C" >{x.description}</td>
+          <td className="C" >{x.client}</td>
+          <td className="C" >{x.balance}</td>
 
       </tr>
-      )}
+            )}
       </tbody>
       </table>
 
       <br></br>
       <div id='accountButtons'>
-      <NavLink className="btn btn-primary btn-xl js-scroll-trigger" to="ViewAccount">Back</NavLink> <br/><br/>
-      </div>
-      </div>
-      </div>
-      </div>
-      </body>
-      );
+             <NavLink className="btn btn-primary btn-xl js-scroll-trigger" to="ViewAccount">Back</NavLink> <br/><br/>
+          </div>
+       </div>
+     </div>
+   </div>
+</body>
+  );
      };
-     };
+        };
 //       <div className="Container-pc">
 //         <h1>PERSONAL ACCOUNT</h1>
 //         <h2>{this.state.username}</h2>
