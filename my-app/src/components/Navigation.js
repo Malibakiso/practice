@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
 import Login from "./LoginPage";
-import {LinkContainer} from "react-router-bootstrap";
+// import {LinkContainer} from "react-router-bootstrap";
 // import Logo from "../img/logow.png"
 
 //function to return the logged in or logged out state

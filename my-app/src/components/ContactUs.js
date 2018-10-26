@@ -7,15 +7,15 @@ import {Link} from 'react-router-dom';
 import ReactDOM from "react-dom";
 import { Container } from 'reactstrap';
 import { FormGroup, FormControl, InputGroup} from 'react-bootstrap';
-
+import { NavLink } from "react-router-dom";
 const ContactUs = () => (
 
 <div>
 <center>
- <Container className="text-center">
+ <Container className="contact">
    <div className="profile-update-wrapper">
           <div className="single-post-title comment-title">
-            <h1>Please feel free to contact us? What do you have to lose?</h1>
+            {/* <h1>Please feel free to contact us? What do you have to lose?</h1> */}
           </div>
           <form className="contact-form" id="contactForm" name="contact-form" action="sendemail.php" method="POST">
             <div className="row">

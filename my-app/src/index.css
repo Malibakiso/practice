@@ -337,3 +337,8 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 .intro-details h3{
 	margin-top: 0;
 }
+.contact{
+  margin:50px;
+  color:green;
+  /* background-color: #c0c0c0; */
+}
