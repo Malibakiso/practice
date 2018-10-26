@@ -28,7 +28,7 @@ URL : ()
 * [HTML](https://en.wikipedia.org/wiki/HTML) 
 * [Bootstrap](https://getbootstrap.com/)
 * [React.js](https://reactjs.org/)
-* npm(https://www.npmjs.com)
+* [npm](https://www.npmjs.com)
 
 
 ## Acknowledgments
