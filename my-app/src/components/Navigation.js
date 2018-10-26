@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
 import Login from "./LoginPage";
+import {LinkContainer} from "react-router-bootstrap";
 // import Logo from "../img/logow.png"
 
 //function to return the logged in or logged out state
@@ -30,8 +31,21 @@ class Navigation extends Component {
  return (
  <div>
  {sneaky()}
+
  <nav>
- <ul >
+
+   <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="/HomePage">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/ContactUs">Contact Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/LoginPage">Login</a>
+  </li>
+</ul>
+ {/* <ul >
  <li>
  <NavLink className="navThing" to="/HomePage" >Home</NavLink>
  </li>
@@ -43,8 +57,9 @@ class Navigation extends Component {
  </li>
 
 
- </ul>
+ </ul> */}
  </nav>
+
  </div>
  );
  }
@@ -55,10 +70,37 @@ class Navigation extends Component {
  return (
  <div>
  <nav>
- <ul >
- {/* <li>
- <img width="120px" height="50px" src={Logo}/>
- </li> */}
+  <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <NavLink className="navThing" to="/HomePage" >Home</NavLink>
+  </li>
+  <li class="nav-item">
+    <NavLink className="navThing" to="/About">AboutUs</NavLink>
+  </li>
+  <li class="nav-item">
+    <NavLink className="navThing" to="/Buy">Buy</NavLink>
+  </li>
+  <li class="nav-item">
+    <NavLink className="navThing" to="/Transactions">Transactions</NavLink>
+  </li>
+  <li class="nav-item">
+    <NavLink className="navThing" to="/Beneficiary">Beneficiaries</NavLink>
+  </li>
+  <li class="nav-item">
+    <NavLink className="navThing" to="/ContactUs">Contact Us</NavLink>
+  </li>
+  <li class="nav-item">
+    <NavLink className="navThing" to="/FAQ">FAQs</NavLink>
+  </li>
+  <li class="nav-item">
+    <NavLink style={{position:'absolute', right:0}} className="navThing" to="/" onClick={sneaky()}>Logout</NavLink>
+  </li>
+</ul>
+
+ {/* <ul >
+ <li> */}
+{/* <img width="120px" height="50px" src={Logo}/> */}
+ {/* </li>
  <li>
  <NavLink className="navThing" to="/HomePage" >Home</NavLink>
  </li>
@@ -82,7 +124,7 @@ class Navigation extends Component {
  <NavLink style={{position:'absolute', right:0}} className="navThing" to="/" onClick={sneaky()}>Logout</NavLink>
  </li>
 
- </ul>
+ </ul> */}
  </nav>
  </div>
  );

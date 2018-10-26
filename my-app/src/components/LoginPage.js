@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import axios from 'axios';
 import jsSHA from 'jssha';
+import {Grid, Jumbotron} from 'react-bootstrap';
 
 class Login extends Component {
 
@@ -59,8 +60,12 @@ class Login extends Component {
           <div className="container text-center my-auto">
             <div className="box">
             <br/><br/>
+            <Grid>
+              <Jumbotron>
             <h1 className="mb-1">Log in</h1>
-            <h5 className="mb-5"><em>Please provide details below</em></h5>
+            <h5 className="mb-5"><em>Please provide details below..<br/>
+            Just a disclaimer, only The Bank of the Sun clients are allowed access by the way.
+           </em></h5>
 
             <div className="contain_txt">
               <div className="borderReg">
@@ -69,7 +74,7 @@ class Login extends Component {
                 <tr>
                   <td>Username:</td>
                   <td><input  name="username" onChange={this.onChange}/></td>
-                </tr>
+                </tr><br/>
                 <tr>
                   <td>Password:</td>
                   <td><input  name="password" onChange={this.onChange} type="password"/></td>
@@ -80,8 +85,11 @@ class Login extends Component {
               <NavLink className="btn btn-primary btn-xl js-scroll-trigger" onClick={e=>this.loginFunction()} to="Payments" >Login</NavLink>
               <NavLink className="btn btn-primary btn-xl js-scroll-trigger" to="Register" >Register</NavLink>
 
+
               </div>
             </div>
+            </Jumbotron>
+            </Grid>
             </div>
           </div>
         </body>

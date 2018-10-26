@@ -29,6 +29,7 @@ import ContactUs from "./components/ContactUs";
 import Transactions from "./components/Transactions";
 import PersonalAcc from "./components/PersonalAcc";
 
+
 class App extends Component {
 
  constructor(props){
@@ -69,6 +70,7 @@ class App extends Component {
  <Route path="/ContactUs" render={props => <ContactUs username={this.state.username} password={this.state.password}/>} />
  <Route path="/Transactions" render={props => <Transactions username={this.state.username} password={this.state.password}/>} />
  <Route path="/PersonalAcc" render={props => <PersonalAcc username={this.state.username} password={this.state.password}/>} />
+
 
  <Route component={Error} />
 
