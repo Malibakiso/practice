@@ -9,11 +9,13 @@ import { Container } from 'reactstrap';
 import { FormGroup, FormControl, InputGroup} from 'react-bootstrap';
 
 const ContactUs = () => (
+
 <div>
+<center>
  <Container className="text-center">
    <div className="profile-update-wrapper">
           <div className="single-post-title comment-title">
-            <h1>Contact Us..</h1>
+            <h1>Please feel free to contact us? What do you have to lose?</h1>
           </div>
           <form className="contact-form" id="contactForm" name="contact-form" action="sendemail.php" method="POST">
             <div className="row">
@@ -44,6 +46,7 @@ const ContactUs = () => (
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4258.600614926214!2d18.863204715729832!3d-33.932657080638556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcdb25d605f7069%3A0xb8a7267b68e9efcd!2sNeelsie+Student+Centre%2C+Stellenbosch+Central%2C+Stellenbosch%2C+7600%2C+South+Africa!5e1!3m2!1sen!2sin!4v1539894146901" width={600} height={450} frameBorder={0} style={{border: 0}} allowFullScreen />	</div>
       <div className="clearfix" />
   </Container>
+  </center>
 </div>
 
 
