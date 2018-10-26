@@ -12,6 +12,9 @@ followed by some design mockups and then a functioning prototype.
 Control Alt Elite took the philosophy and motto of "Simplifying complexity", this can be seen in the design of the user interface itself. Making applications that have beautiful functionality and aethetics is what this online banking application aims to achieve.
 
 
+# Documents
+Please see user file. it contains the index.html file (website) with user documentation linked to it. 
+
 ## About
 
 This project is the group assessment for Socio Informatics/Information Systems Management 354. Groups consisted of 4/5 members and was tasked with implementation including use of HTML, CSS, JavaScript and Bootstrap. 
