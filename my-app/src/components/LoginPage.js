@@ -59,11 +59,12 @@ class Login extends Component {
 
   render() {
     return (
-      <div>
-          <div id="over">
-           <span class="Centerer"></span>
-           <img class="Centered" src="./assets/sunmain.png" />
-         </div>
+      // <div>
+      //     <div id="over">
+      //      <span class="Centerer"></span>
+      //      <img class="Centered" src="./assets/sunmain.png" style={{width: 120, height: 85}} />
+      //
+      // </div>
         <body class="bodystyle">
           <div className="container text-center my-auto">
             <div className="box">
@@ -106,8 +107,7 @@ class Login extends Component {
             </Container>
           </div>
         </body>
-      </div>
-      
+
     );
   }
 };

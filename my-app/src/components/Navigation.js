@@ -75,7 +75,7 @@ class Navigation extends Component {
     <NavLink className="navThing" to="/HomePage" >Home</NavLink>
   </li>
   <li class="nav-item">
-    <NavLink className="navThing" to="/About">AboutUs</NavLink>
+    <NavLink className="navThing" to="/About">About Us</NavLink>
   </li>
   <li class="nav-item">
     <NavLink className="navThing" to="/AccountMan">Account Management</NavLink>

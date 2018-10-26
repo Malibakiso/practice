@@ -10,7 +10,8 @@ import {Container} from 'reactstrap';
 // import ReactBootstrapCarousel from "react-bootstrap-carousel";
 // import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 // // import RBCarousel from "react-bootstrap-carousel";
-
+import {Grid, Jumbotron} from 'react-bootstrap';
+// import { NavLink } from "react-router-dom";
 const About = () => (
 
 <div>
