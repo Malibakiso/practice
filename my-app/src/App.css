@@ -179,16 +179,16 @@ a img {
 }
 
 .intro-bg1{
-	background: url("/assets/sunmain.png") no-repeat;
+	background: url("/assets/Zviko.png") no-repeat;
 }
 .intro-bg2{
-	background: url("#") no-repeat;
+	background: url("/assets/Courtney.png") no-repeat;
 }
 .intro-bg3{
-	background: url("#") no-repeat;
+	background: url("/assets/Max.png") no-repeat;
 }
 .intro-bg4{
-	background: url("#") no-repeat;
+	background: url("/assets/Vince.png") no-repeat;
 }
 
 .intro-title p{
