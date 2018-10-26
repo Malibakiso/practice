@@ -279,3 +279,6 @@ a img {
     display: inline-block;
     vertical-align: middle;
 }
+.bodystyle{
+  background-color: #fff;
+}
