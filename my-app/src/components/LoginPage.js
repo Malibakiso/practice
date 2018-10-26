@@ -62,7 +62,7 @@ class Login extends Component {
             <br/><br/>
             <Grid>
               <Jumbotron>
-            <h1 className="mb-1">Log in</h1>
+            <h1 className="mb-1">Log In</h1>
             <h5 className="mb-5"><em>Please provide details below..<br/>
             Just a disclaimer, only The Bank of the Sun clients are allowed access by the way.
            </em></h5>
@@ -82,7 +82,7 @@ class Login extends Component {
               </table>
 
               <br/><br/>
-              <NavLink className="btn btn-primary btn-xl js-scroll-trigger" onClick={e=>this.loginFunction()} to="Payments" >Login</NavLink>
+              <NavLink className="btn btn-primary btn-xl js-scroll-trigger" onClick={e=>this.loginFunction()} to="HomePage" >Login</NavLink>
               <NavLink className="btn btn-primary btn-xl js-scroll-trigger" to="Register" >Register</NavLink>
 
 

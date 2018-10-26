@@ -28,6 +28,8 @@ import Buy from "./components/Buy";
 import ContactUs from "./components/ContactUs";
 import Transactions from "./components/Transactions";
 import PersonalAcc from "./components/PersonalAcc";
+import BusinessAcc from "./components/BusinessAcc";
+import AccountMan from "./components/AccountMan";
 
 
 class App extends Component {
@@ -70,9 +72,11 @@ class App extends Component {
  <Route path="/ContactUs" render={props => <ContactUs username={this.state.username} password={this.state.password}/>} />
  <Route path="/Transactions" render={props => <Transactions username={this.state.username} password={this.state.password}/>} />
  <Route path="/PersonalAcc" render={props => <PersonalAcc username={this.state.username} password={this.state.password}/>} />
+ <Route path="/BusinessAcc" render={props => <BusinessAcc username={this.state.username} password={this.state.password}/>} />
+ <Route path="/AccountMan" render={props => <AccountMan username={this.state.username} password={this.state.password}/>} />
 
 
- <Route component={Error} />
+ {/* <Route component={Error} /> */}
 
  </Switch>
  </div>

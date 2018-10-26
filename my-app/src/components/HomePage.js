@@ -13,8 +13,8 @@ export default class HomePage extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      username:"lazymeercat116",
-      password:"hottest",
+      username:"",
+      password:"",
       columns: [
         {
           Header: 'Username',
@@ -63,6 +63,8 @@ export default class HomePage extends React.Component {
   }
 
   componentDidMount(){
+    const user = this.props.username;
+    const password = this.props.password;
     const hmac = new jsSha('SHA-256','TEXT');
     hmac.setHMACKey(this.state.password, 'TEXT');
     hmac.update(this.state.username);
