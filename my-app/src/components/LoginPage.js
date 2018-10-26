@@ -101,8 +101,8 @@ class Login extends Component {
             </Grid>
             </div>
             <Container>
-            <a href="../html-link.htm"><img src="./assets/facebook.png" style={{width: 82, height: 86}} title="Facebook" alt="Facebook" /></a>
-            <a href="../html-link.htm"><img src="./assets/twitter.jpg" style={{width: 82, height: 86}} title="Twitter" alt="Twitter" /></a>
+            <a href=" https://www.facebook.com/thebankofthe.sun"><img src="./assets/facebook.png" style={{width: 82, height: 86}} title="Facebook" alt="Facebook" /></a>
+            <a href="https://twitter.com/BankoftheSun1 "><img src="./assets/twitter.jpg" style={{width: 82, height: 86}} title="Twitter" alt="Twitter" /></a>
             <a href="../html-link.htm"><img src="./assets/youtube.png" style={{width: 82, height: 86}} title="YouTube" alt="YouTube" /></a>
             </Container>
           </div>

@@ -94,10 +94,10 @@ export default class Data extends React.Component {
                   <InputGroupAddon addonType="append">.00</InputGroupAddon>
                 </InputGroup>
                 <br/>
-                <Button onClick = {e => this.onSubmit('Data')}>Buy Data</Button>
+                <Button onClick = {e => this.onSubmit('Data purchase successful')}>Buy Data</Button>
               </Form>
             </Col>
-            
+
           </Row>
         </Container>
       </div>

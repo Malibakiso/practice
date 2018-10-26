@@ -96,7 +96,7 @@ export default class Electricity extends React.Component {
                   <InputGroupAddon addonType="append">.00</InputGroupAddon>
                 </InputGroup>
                 <br/>
-                <Button onClick = {e => this.onSubmit('Electricity')}>Buy Electricity</Button>
+                <Button onClick = {e => this.onSubmit('Electricity purchase successful')}>Buy Electricity</Button>
                 {/* buying of electricity */}
               </Form>
             </Col>

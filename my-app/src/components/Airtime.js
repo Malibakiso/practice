@@ -96,7 +96,7 @@ export default class Airtime extends React.Component {
                   <InputGroupAddon addonType="append">.00</InputGroupAddon>
                 </InputGroup>
                 <br/>
-                <Button onClick = {e => this.onSubmit('Airtime')}>Buy Airtime</Button>
+                <Button onClick = {e => this.onSubmit('Airtime purchase succesful')}>Buy Airtime</Button>
               </Form>
             </Col>
           </Row>
