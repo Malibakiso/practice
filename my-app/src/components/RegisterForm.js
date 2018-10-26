@@ -5,6 +5,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { Form } from 'semantic-ui-react';
+import { NavLink } from 'react-router-dom';
 
 class RegisterForm extends React.Component{
   state = {

@@ -9,13 +9,13 @@ this.state={time:new Date()}
 
   currentTime()
   {
-    this.setState({
+    this.setState({  //setting of state for date
       time: new Date()
     })
   }
   componentWillMount()
   {
-setInterval(()=>this.currentTime(),1000)
+setInterval(()=>this.currentTime(),1000)  //future timing clock
   }
 
 

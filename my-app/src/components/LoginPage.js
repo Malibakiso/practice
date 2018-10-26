@@ -4,6 +4,9 @@ import { NavLink } from "react-router-dom";
 import axios from 'axios';
 import jsSHA from 'jssha';
 import {Grid, Jumbotron} from 'react-bootstrap';
+import { Container } from 'reactstrap';
+
+
 
 class Login extends Component {
 
@@ -56,6 +59,11 @@ class Login extends Component {
 
   render() {
     return (
+      <div>
+          <div id="over">
+           <span class="Centerer"></span>
+           <img class="Centered" src="./assets/sunmain.png" />
+         </div>
         <body class="bodystyle">
           <div className="container text-center my-auto">
             <div className="box">
@@ -83,7 +91,7 @@ class Login extends Component {
 
               <br/><br/>
               <NavLink className="btn btn-primary btn-xl js-scroll-trigger" onClick={e=>this.loginFunction()} to="HomePage" >Login</NavLink>
-              <NavLink className="btn btn-primary btn-xl js-scroll-trigger" to="Register" >Register</NavLink>
+              <NavLink className="btn btn-primary btn-xl js-scroll-trigger" onClick={e=>this.loginFunction()} to="RegisterForm" >Register</NavLink>
 
 
               </div>
@@ -91,8 +99,15 @@ class Login extends Component {
             </Jumbotron>
             </Grid>
             </div>
+            <Container>
+            <a href="../html-link.htm"><img src="./assets/facebook.png" style={{width: 82, height: 86}} title="Facebook" alt="Facebook" /></a>
+            <a href="../html-link.htm"><img src="./assets/twitter.jpg" style={{width: 82, height: 86}} title="Twitter" alt="Twitter" /></a>
+            <a href="../html-link.htm"><img src="./assets/youtube.png" style={{width: 82, height: 86}} title="YouTube" alt="YouTube" /></a>
+            </Container>
           </div>
         </body>
+      </div>
+      
     );
   }
 };

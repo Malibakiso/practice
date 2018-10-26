@@ -43,55 +43,55 @@ class Payments extends Component {
 
 render(){
  return (
- <body className="bodystyle">
- <div className="container text-center my-auto">
- <br />
+    <body className="bodystyle">
+      <div className="container text-center my-auto">
+      <br />
  <div className="boxAccountspecific">
- <br></br>
+      <br></br>
  <h2 className="mb-1">Statements</h2>
- <br/>
+      <br/>
  <div id="Personal" className="tabcontent">
- <table className="C">
- <thead>
- <th className="C" >Time</th>
- <th className="C" >Type</th>
- <th className="C" >Source</th>
- <th className="C" >Destination</th>
- <th className="C" >Amount</th>
- <th className="C" >Reference</th>
- </thead>
- <tbody>
+     <table className="C">
+             <thead>
+                <th className="C" >Time</th>
+                <th className="C" >Type</th>
+                <th className="C" >Source</th>
+                <th className="C" >Destination</th>
+                <th className="C" >Amount</th>
+                <th className="C" >Reference</th>
+          </thead>
+  <tbody>
  {this.state.transactions.map(x =>
- <tr key = {x._id}>
- <td className="C" >{new Intl.DateTimeFormat('en-GB', {
- year: 'numeric',
- month: 'long',
- day:'2-digit',
- hour:'2-digit',
- minute: '2-digit',
- second: '2-digit'
- }).format(x.time)}
- </td>
- <td className="C" >{x.type}</td>
- <td className="C" >{x.src}</td>
- <td className="C" >{x.dest}</td>
- <td className="C" >{x.amount}</td>
- <td className="C" >{x.ref}</td>
- </tr>
- )}
+  <tr key = {x._id}>
+  <td className="C" >{new Intl.DateTimeFormat('en-GB', {
+      year: 'numeric',
+      month: 'long',
+      day:'2-digit',
+      hour:'2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+                    }).format(x.time)}
+  </td>
+       <td className="C" >{x.type}</td>
+       <td className="C" >{x.src}</td>
+       <td className="C" >{x.dest}</td>
+       <td className="C" >{x.amount}</td>
+       <td className="C" >{x.ref}</td>
+  </tr>
+          )}
  </tbody>
  </table>
 
  <br></br>
- <div id='accountButtons'>
- <NavLink className="btn btn-primary btn-xl js-scroll-trigger" to="ViewAccount">Back</NavLink> <br/><br/>
- </div>
- </div>
- </div>
- </div>
- </body>
- );
-};
-};
+           <div id='accountButtons'>
+           <NavLink className="btn btn-primary btn-xl js-scroll-trigger" to="ViewAccount">Back</NavLink> <br/><br/>
+                  </div>
+              </div>
+        </div>
+   </div>
+</body>
+  );
+    };
+       };
 
 export default Payments;

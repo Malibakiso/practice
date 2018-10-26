@@ -33,7 +33,7 @@ const FAQ = () => (
                     • Bank of the Sun accounts<br />
                     • Approved Beneficiaries*<br />
                     • Credit Card/Debit Card accounts<br />
-                    *An "approved beneficiary" is a company or institution with which The Bank of the Sun has a special payment agreement for your convenience (e.g. Telkom). When paying an `approved beneficiary', you don't need the beneficiary's banking details.</p>
+                    •*An "approved beneficiary" is a company or institution with which The Bank of the Sun has a special payment agreement for your convenience (e.g. Telkom). When paying an `approved beneficiary', you don't need the beneficiary's banking details.</p>
                   <h6>Can I link new beneficiaries over the telephone whilst speaking to the consultant?</h6>
                   <p style={{fontSize:'15px', textAlign:'center'}} class="solid">Yes. You may instruct the consultant to add any beneficiary to your profile, however you will be required to provide the consultant with the SMS reference number in order to authorise the consultant to proceed with the transaction&nbsp;</p>
                   {/* <h6>How soon will a payment go through?</h6>
