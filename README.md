@@ -20,10 +20,6 @@ Please see user file. it contains the index.html file (website) with user docume
 This project is the group assessment for Socio Informatics/Information Systems Management 354. Groups consisted of 4/5 members and was tasked with implementation including use of HTML, CSS, JavaScript and Bootstrap. 
 
 
-## Deployment
-
-URL : ()
-
 ## Built With
 
 * [JavaScript](https://www.javascript.com/) 
