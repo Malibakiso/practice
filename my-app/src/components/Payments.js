@@ -35,6 +35,15 @@ class Payments extends Component {
  this.setState({
  accounts: accounts.data,
  transactions: transactions.data});
+
+ const body = {
+  "type": 'Purchase',
+  "src": accounts.data[0]._id,
+  "dest": 'Text',
+  "amount": 100,
+  "ref": 'Refernce'
+ }
+ console.log(api.post(`/transactions`, body));
  console.log(accounts);
  console.log(transactions);
  })();

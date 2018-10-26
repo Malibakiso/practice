@@ -81,7 +81,7 @@ class Navigation extends Component {
     <NavLink className="navThing" to="/AccountMan">Account Management</NavLink>
   </li>
   <li class="nav-item">
-    <NavLink className="navThing" to="/Buy">Buy</NavLink>
+    <NavLink className="navThing" to="/Airtime">Prepaid & Utilities</NavLink>
   </li>
   <li class="nav-item">
     <NavLink className="navThing" to="/Transactions">Transactions</NavLink>

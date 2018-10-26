@@ -6,15 +6,16 @@ import React from 'react';
 import axios from 'axios';
 import jsSha from 'jssha';
 import { Container, Row, Col, Button, Form, FormGroup, Label, Input, InputGroup, InputGroupAddon } from 'reactstrap';
+import { NavLink } from "react-router-dom";
 
 
-export default class Buy extends React.Component {
+export default class Electricity extends React.Component {
 
   constructor(props){
     super(props);
     this.state = {
-      username:"lazymeercat116",
-      password:"hottest",
+      username:"",
+      password:"",
     }
   }
 
@@ -54,61 +55,27 @@ export default class Buy extends React.Component {
 
   render() {
     return (
-
+<div>
+  <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <NavLink className="navThing" to="/Airtime">Airtime</NavLink>
+  </li>
+  <li class="nav-item">
+    <NavLink className="navThing" to="/Data">Data</NavLink>
+  </li>
+  <li class="nav-item">
+    <NavLink className="navThing" to="/Electricity">Electricity</NavLink>
+  </li>
+  </ul>
       <div class= "container-buy" className="text-center">
-        <h5>Bank of the Sun clients have the ability to purchase airtime, data bundles and electricity without worrying about the stress of leaving their homes.</h5>
 
         <h1>Prepaid or Utility Services</h1>
+        <h5>Bank of the Sun clients have the ability to purchase airtime, data bundles and electricity without worrying about the stress of leaving their homes.</h5>
         <br></br>
         <Container>
           <section>
           </section>
           <Row>
-            <Col>
-              <h3>Airtime</h3>
-              <Form>
-                <FormGroup>
-                  <Label for="network">Network Provider</Label>
-                  <Input type="select" name="select" id="exampleSelect">
-                    <option>Cell C</option>
-                    <option>MTN</option>
-                    <option>Telkom</option>
-                    <option>Virgin Mobile</option>
-                    <option>Vodacom</option>
-                  </Input>
-                </FormGroup>
-
-                <InputGroup>
-                  <InputGroupAddon addonType="prepend">R</InputGroupAddon>
-                    <Input placeholder="Amount" type="number" step="1" />
-                  <InputGroupAddon addonType="append">.00</InputGroupAddon>
-                </InputGroup>
-                <br/>
-                <Button onClick = {e => this.onSubmit('Airtime')}>Buy Airtime</Button>
-              </Form>
-            </Col>
-            <Col>
-              <h3>Data Bundles</h3>
-              <Form>
-                <FormGroup>
-                  <Label for="network">Network Provider</Label>
-                  <Input type="select" name="select" id="exampleSelect">
-                    <option>Cell C</option>
-                    <option>MTN</option>
-                    <option>Telkom</option>
-                    <option>Virgin Mobile</option>
-                    <option>Vodacom</option>
-                  </Input>
-                </FormGroup>
-                <InputGroup>
-                  <InputGroupAddon addonType="prepend">R</InputGroupAddon>
-                    <Input placeholder="Amount" type="number" step="1" />
-                  <InputGroupAddon addonType="append">.00</InputGroupAddon>
-                </InputGroup>
-                <br/>
-                <Button onClick = {e => this.onSubmit('Data')}>Buy Data</Button>
-              </Form>
-            </Col>
             <Col>
               <h3>Electricity</h3>
               <Form>
@@ -136,6 +103,7 @@ export default class Buy extends React.Component {
           </Row>
         </Container>
       </div>
+  </div>
     )
   }
 }
